@@ -6,8 +6,8 @@ italic.style = "Bold Italic"
 size = 16.0
 
 [window]
-dimensions.columns = 200
-dimensions.lines = 45
+dimensions.columns = 300 #Full width
+dimensions.lines = 100 #Full height
 padding.x = 26
 padding.y = 26
 decorations = "Transparent"
