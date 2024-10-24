@@ -27,6 +27,8 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+keymap("n", "<leader>n", ":noh<cr>", opts)
+
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
@@ -83,7 +85,7 @@ keymap("n", "<c-t>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
 keymap("n", "<leader>gf", "<cmd>LazyGit<cr>", opts)
 
 -- LSP
-keymap("n", "<c-1>", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
+keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
 
 keymap('i', '<F2>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
 keymap('n', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
