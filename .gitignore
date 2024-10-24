@@ -25,6 +25,7 @@ fvim/
 coc/
 atuin/
 .mono/
+.DS_Store
 
 # Compiled Java class files
 *.class
