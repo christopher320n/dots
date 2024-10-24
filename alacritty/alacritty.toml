@@ -7,8 +7,8 @@ size = 16.0
 [window]
 dimensions.columns = 300 #Full width
 dimensions.lines = 100 #Full height
-padding.x = 26
-padding.y = 26
+padding.x = 30
+padding.y = 30
 decorations = "Transparent"
 option_as_alt = "Both"
 
