@@ -1,0 +1,17 @@
+
+[font]
+normal.family = "MesloLGL Nerd Font"
+normal.style = "Bold"
+italic.style = "Bold Italic"
+size = 16.0
+
+[window]
+dimensions.columns = 200
+dimensions.lines = 45
+padding.x = 26
+padding.y = 26
+decorations = "Transparent"
+option_as_alt = "Both"
+
+[general]
+import = ["~/.config/alacritty/themes/chalkboard/chalkboard.toml"]
