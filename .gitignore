@@ -26,6 +26,7 @@ coc/
 atuin/
 .mono/
 .DS_Store
+PureRef.ini
 
 # Compiled Java class files
 *.class
