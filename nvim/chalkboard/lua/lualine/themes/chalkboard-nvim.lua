@@ -6,7 +6,7 @@ local bg = configs.lualine_bg_color or colors.lualine_background
 
 local normal = {
    a = { fg = colors.black, bg = colors.cyan, gui = 'bold' },
-   b = { fg = colors.bright_white, bg = bg },
+   b = { fg = colors.bright_white, bg = colors.dark_purple },
    c = { fg = colors.white, bg = bg },
 }
 

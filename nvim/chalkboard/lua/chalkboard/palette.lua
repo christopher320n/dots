@@ -26,4 +26,5 @@ return {
    white = "#ABB2BF",
    black = "#191A21",
    lualine_background = "#36454D",
+   dark_purple = '#6272A4'; 
 }
