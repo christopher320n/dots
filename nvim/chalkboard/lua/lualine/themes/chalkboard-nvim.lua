@@ -12,12 +12,12 @@ local normal = {
 
 local command = {
    a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
-   b = { fg = colors.bright_white, bg = bg },
+   b = { fg = colors.bright_white, bg = colors.dark_purple },
 }
 
 local visual = {
    a = { fg = colors.black, bg = colors.purple, gui = 'bold' },
-   b = { fg = colors.bright_white, bg = bg }, 
+   b = { fg = colors.bright_white, bg = colors.dark_purple }, 
 }
 
 local inactive = {
@@ -27,13 +27,13 @@ local inactive = {
 
 local replace = {
    a = { fg = colors.black, bg = colors.yellow, gui = 'bold' },
-   b = { fg = colors.bright_white, bg = bg },
+   b = { fg = colors.bright_white, bg = colors.dark_purple },
    c = { fg = colors.white, bg = bg },
 }
 
 local insert = {
    a = { fg = colors.black, bg = colors.green, gui = 'bold' },
-   b = { fg = colors.bright_white, bg = bg },
+   b = { fg = colors.bright_white, bg = colors.dark_purple },
    c = { fg = colors.white, bg = bg },
 }
 
