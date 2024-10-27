@@ -10,7 +10,6 @@ bufferline.setup {
     right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
     left_mouse_command = "buffer %d", -- can be a string | function, see "Mouse actions"
     middle_mouse_command = nil, -- can be a string | function, see "Mouse actions"
-    -- indicator_icon = "▎",
     indicator_icon = "▋",
     buffer_close_icon = '',
     modified_icon = "●",
@@ -20,7 +19,7 @@ bufferline.setup {
     max_name_length = 30,
     max_prefix_length = 30, -- prefix used when a buffer is de-duplicated
     tab_size = 20,
-    diagnostics = false, -- | "nvim_lsp" | "coc",
+    diagnostics = "nvim_lsp", -- | "nvim_lsp" | "coc",
     diagnostics_update_in_insert = false,
     offsets = { { filetype = "NvimTree", text = "Working Directory", padding = 0 } },
     show_buffer_icons = true,
@@ -62,7 +61,6 @@ bufferline.setup {
       guibg = { attribute = "bg", highlight = "TabLine" },
     },
     tab_close = {
-      -- guifg = {attribute='fg',highlight='LspDiagnosticsDefaultError'},
       guifg = { attribute = "fg", highlight = "TabLineSel" },
       guibg = { attribute = "bg", highlight = "Normal" },
     },

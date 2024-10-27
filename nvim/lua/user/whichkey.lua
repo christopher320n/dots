@@ -9,6 +9,7 @@ local mappings = {
     { "<leader>t", desc = "Toggle Trouble" },
     { "<leader>r", desc = "Refactor" },
     { "<leader>rn", desc = "Renamer" },
+    { "<leader>n", desc = "Remove Highlight" },
 }
 
 wk.add(mappings)

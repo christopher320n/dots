@@ -40,9 +40,9 @@ packer.init {
 
 
 return packer.startup(function(use)
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim"    -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim"  -- Useful lua functions used ny lots of plugins
+  use "wbthomason/packer.nvim"
+  use "nvim-lua/popup.nvim"
+  use "nvim-lua/plenary.nvim"
   use "kyazdani42/nvim-web-devicons"
   use "kyazdani42/nvim-tree.lua"
 
@@ -74,16 +74,14 @@ return packer.startup(function(use)
     requires = {
       { 'williamboman/mason.nvim' },
       { 'williamboman/mason-lspconfig.nvim' },
-      -- LSP Support
       { 'neovim/nvim-lspconfig' },
-      -- Autocompletion
       { 'hrsh7th/nvim-cmp' },
       { 'hrsh7th/cmp-nvim-lsp' },
       { 'L3MON4D3/LuaSnip' },
     }
   }
 
-  --context actions
+  -- Context Actions
   use {
     "aznhe21/actions-preview.nvim",
     config = function()
@@ -91,7 +89,7 @@ return packer.startup(function(use)
     end,
   }
 
-  -- rename window
+  -- Rename Window
   use {
     'filipdutescu/renamer.nvim',
     branch = 'master',
@@ -163,7 +161,7 @@ return packer.startup(function(use)
   use "williamboman/mason.nvim"
   use "williamboman/mason-lspconfig.nvim"
 
-  -- Discord rich presence
+  -- Discord Rich Presence
   use {
     "andweeb/presence.nvim",
     config = function()
@@ -181,7 +179,7 @@ return packer.startup(function(use)
     },
   })
 
-  -- Trouble (Error message display)
+  -- Trouble
   use {
     "folke/trouble.nvim",
     config = function()

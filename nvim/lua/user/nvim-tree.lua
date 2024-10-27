@@ -19,14 +19,16 @@ require "nvim-tree".setup {
     icons = {
       glyphs = {
         git = {
-          untracked = "⛙",
-          unstaged = "🆄",
+          untracked = "󰵺",
+          unstaged = "󰰩",
         },
       },
     },
   },
 }
+
 vim.cmd(":NvimTreeToggle")
 vim.opt.fillchars = { eob = " "}
 vim.cmd('hi NvimTreeWinSeparator guifg=#FFFFFF guibg=NONE')
 vim.cmd('hi WinSeparator guifg=#FFFFFF guibg=NONE')
+

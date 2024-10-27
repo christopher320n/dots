@@ -2,21 +2,18 @@ local opts = { noremap = true, silent = true }
 
 local term_opts = { silent = true }
 
--- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap space as leader key
+-- Leader
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
-
--- Modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
+ 
+-- LSP
+keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
+keymap('n', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+keymap('i', '<F2>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
+keymap('v', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
 
 -- Normal --
 -- Better window navigation
@@ -25,8 +22,10 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+-- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+-- Highlighting
 keymap("n", "<leader>n", ":noh<cr>", opts)
 
 -- Resize with arrows
@@ -36,7 +35,7 @@ keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-keymap("n", "<c-a>", "<cmd>:bprevious<bar>bd #<CR>", opts) -- close buffer
+keymap("n", "<c-a>", "<cmd>:bprevious<bar>bd #<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
@@ -44,13 +43,28 @@ keymap("n", "<S-h>", ":bprevious<CR>", opts)
 keymap("n", "<A-j>", ":m .+1<CR>", opts)
 keymap("n", "<A-k>", ":m .-2<CR>", opts)
 
+-- ToggleTerm
+keymap("n", "<leader>/", "<cmd>ToggleTerm direction=float<cr>", opts)
+
+-- Telescope
+keymap("n", "<leader><Tab>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
+keymap("n", "<c-c>", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<c-t>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+
+-- Lazygit
+keymap("n", "<leader>gf", "<cmd>LazyGit<cr>", opts)
+
+-- Trouble
+keymap('n', "<leader>t", "<cmd>Trouble diagnostics toggle<CR>", opts)
+
+-- Insert --
+-- Shift Tab behaviour
+keymap("i", "<S-Tab>", "<C-d>", opts)
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
-
--- Shift Tab behaviour
-keymap("i", "<S-Tab>", "<C-d>", opts)
 
 -- Move text up and down
 keymap("v", "<A-j>", ":m .+1<CR>==", opts)
@@ -73,23 +87,5 @@ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 keymap("t", ",.", "<C-\\><C-N>", opts)
 
 -- Toggleterm
-keymap("n", "<leader>/", "<cmd>ToggleTerm direction=float<cr>", opts)
 keymap("t", "jk", "<C-c>exit<CR>", opts)
 
--- Telescope
-keymap("n", "<leader><Tab>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-c>", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
-
--- Lazygit
-keymap("n", "<leader>gf", "<cmd>LazyGit<cr>", opts)
-
--- LSP
-keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
-
-keymap('i', '<F2>', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
-keymap('n', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
-keymap('v', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
-
--- Trouble
-keymap('n', "<leader>t", "<cmd>Trouble diagnostics toggle<CR>", opts)
