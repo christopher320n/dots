@@ -11,7 +11,12 @@ lsp_zero.set_sign_icons({
   info = '»'
 })
 
-require('mason').setup({})
+require('mason').setup({
+  ui = {
+    border = "rounded"
+  }   
+})
+
 require('mason-lspconfig').setup({
   ensure_installed = {},
   handlers = {
