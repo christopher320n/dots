@@ -9,6 +9,7 @@ dimensions.columns = 300 #Full width
 dimensions.lines = 100 #Full height
 padding.x = 30
 padding.y = 30
+dynamic_padding = true
 decorations = "Transparent"
 option_as_alt = "Both"
 
