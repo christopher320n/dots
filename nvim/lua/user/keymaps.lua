@@ -46,10 +46,10 @@ keymap("n", "<A-k>", ":m .-2<CR>", opts)
 -- ToggleTerm
 keymap("n", "<leader>/", "<cmd>ToggleTerm direction=float<cr>", opts)
 
--- Telescope
-keymap("n", "<leader><Tab>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown({ previewer = false }))<cr>", opts)
-keymap("n", "<c-c>", "<cmd>Telescope live_grep<cr>", opts)
-keymap("n", "<c-t>", "<cmd>Telescope current_buffer_fuzzy_find<cr>", opts)
+-- FzfLua
+keymap("n", "<leader><Tab>", "<cmd>FzfLua files<cr>", opts)
+keymap("n", "<c-c>", "<cmd>FzfLua live_grep<cr>", opts)
+keymap("n", "<c-t>", "<cmd>FzfLua lgrep_curbuf<cr>", opts)
 
 -- Lazygit
 keymap("n", "<leader>gf", "<cmd>LazyGit<cr>", opts)

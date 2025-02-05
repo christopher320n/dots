@@ -187,6 +187,17 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    "vim-test/vim-test"
+  }
+
+  use {
+    "ibhagwan/fzf-lua",
+    config = function()
+      require("fzf-lua").setup {}
+    end
+  }
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
