@@ -2,12 +2,15 @@ local colorscheme = "catppuccin-mocha"
 -- local colorscheme = "chalkboard"
 local bufferlinebg_chalkboard = '#36454D';
 local bufferlinebg_catppuccin = '#313445';
+local bufferlinebg_fallback = '#111111';
 
 local function getBufferlineBgForCurrentTheme()
   if colorscheme == 'chalkboard' then
     return bufferlinebg_chalkboard
   elseif colorscheme == 'catppuccin-mocha' then
     return bufferlinebg_catppuccin
+  else
+    return bufferlinebg_fallback 
   end
 end
 
