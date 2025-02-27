@@ -1,5 +1,5 @@
 local colorscheme = "catppuccin-mocha"
--- local colorscheme = "chalkboard"
+--local colorscheme = "chalkboard"
 local bufferlinebg_chalkboard = '#36454D';
 local bufferlinebg_catppuccin = '#313445';
 local bufferlinebg_fallback = '#111111';
@@ -22,10 +22,11 @@ end
 
 vim.cmd('hi NvimTreeWinSeparator guifg=#FFFFFF guibg=NONE')
 vim.cmd('hi WinSeparator guifg=#FFFFFF guibg=NONE')
-vim.cmd("hi WhichKeyNormal guibg=#1B2326")
-vim.cmd("hi WhichKey guibg=#1B2326")
-vim.cmd("hi BufferLineFill guifg=#FFFFFF guibg=" .. getBufferlineBgForCurrentTheme())
-vim.cmd("hi BufferLineSeparator guifg=#36454D guibg=" .. getBufferlineBgForCurrentTheme())
+--TODO find a way to incorporate into theme
+--vim.cmd("hi WhichKeyNormal guibg=#1B2326")
+--vim.cmd("hi WhichKey guibg=#1B2326")
+--vim.cmd("hi BufferLineFill guifg=#FFFFFF guibg=" .. getBufferlineBgForCurrentTheme())
+--vim.cmd("hi BufferLineSeparator guifg=#36454D guibg=" .. getBufferlineBgForCurrentTheme())
 
 vim.ui.select = function(items, opts, on_choice)
   opts = opts or {}
