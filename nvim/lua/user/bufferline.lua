@@ -101,6 +101,3 @@ bufferline.setup {
     },
   },
 }
-
-vim.cmd(":hi BufferLineFill guifg=#FFFFFF guibg=#36454D")
-vim.cmd(":hi BufferLineSeparator guifg=#36454D guibg=#36454D")

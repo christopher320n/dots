@@ -38,7 +38,6 @@ packer.init {
   },
 }
 
-
 return packer.startup(function(use)
   use "wbthomason/packer.nvim"
   use "nvim-lua/popup.nvim"
@@ -81,6 +80,14 @@ return packer.startup(function(use)
       { 'hrsh7th/cmp-nvim-lsp' },
       { 'L3MON4D3/LuaSnip' },
     }
+  }
+
+
+  use {
+    "Hoffs/omnisharp-extended-lsp.nvim",
+    config = function()
+      require("omnisharp_extended")
+    end
   }
 
   -- Context Actions
@@ -162,7 +169,7 @@ return packer.startup(function(use)
     "andweeb/presence.nvim",
     config = function()
       require("presence").setup {
-          neovim_image_text = "Neovim 0.9";
+        neovim_image_text = "Neovim 0.9",
       }
     end
   }
@@ -194,8 +201,24 @@ return packer.startup(function(use)
     end
   }
 
+  use {
+    "mikesmithgh/borderline.nvim",
+    config = function()
+      require("borderline").setup {}
+    end
+  }
+
   use 'davidgranstrom/nvim-markdown-preview'
 
+  require('packer').startup(function()
+      use {
+        'stevearc/overseer.nvim',
+        config = function() require('overseer').setup() end
+      }
+  end)
+
+  -- Automatically set up your configuration after cloning packer.nvim
+  -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
     require("packer").sync()
   end

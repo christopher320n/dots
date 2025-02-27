@@ -13,5 +13,4 @@ local mappings = {
 }
 
 wk.add(mappings)
-vim.cmd(":hi WhichKeyNormal guibg=#1B2326")
-vim.cmd(":hi WhichKey guibg=#1B2326")
+

@@ -8,7 +8,7 @@ local keymap = vim.api.nvim_set_keymap
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
- 
+
 -- LSP
 keymap("n", "<C-s>", "<cmd>lua vim.lsp.buf.format()<CR>", opts)
 keymap('n', '<leader>rn', '<cmd>lua require("renamer").rename()<cr>', { noremap = true, silent = true })
@@ -24,6 +24,7 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 
 -- NvimTree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>f", ":NvimTreeFindFile<cr>", opts)
 
 -- Highlighting
 keymap("n", "<leader>n", ":noh<cr>", opts)
@@ -50,7 +51,7 @@ keymap("n", "<leader>/", "<cmd>ToggleTerm direction=float<cr>", opts)
 keymap("n", "<leader><Tab>", "<cmd>FzfLua files<cr>", opts)
 keymap("n", "<c-c>", "<cmd>FzfLua live_grep<cr>", opts)
 keymap("n", "<c-t>", "<cmd>FzfLua lgrep_curbuf<cr>", opts)
-
+--
 -- Lazygit
 keymap("n", "<leader>gf", "<cmd>LazyGit<cr>", opts)
 
