@@ -15,3 +15,6 @@ option_as_alt = "Both"
 
 [general]
 import = ["~/.config/alacritty/themes/chalkboard/chalkboard.toml"]
+
+[terminal.shell]
+program = "/bin/zsh"
