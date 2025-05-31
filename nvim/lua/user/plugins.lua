@@ -49,9 +49,9 @@ return packer.startup(function(use)
   -- Colorschemes
   use 'Mofiqul/dracula.nvim'
   use '~/.config/nvim/chalkboard'
-  use 'catppuccin/nvim'
   use 'echasnovski/mini.icons'
   use 'rktjmp/lush.nvim'
+  use "catppuccin/nvim"
 
   -- CMP Plugins
   use "hrsh7th/nvim-cmp"
@@ -74,8 +74,8 @@ return packer.startup(function(use)
     'VonHeikemen/lsp-zero.nvim',
     branch = 'v3.x',
     requires = {
-      { 'williamboman/mason.nvim' },
-      { 'williamboman/mason-lspconfig.nvim' },
+      { 'mason-org/mason.nvim' },
+      { 'mason-org/mason-lspconfig.nvim' },
       { 'neovim/nvim-lspconfig' },
       { 'hrsh7th/nvim-cmp' },
       { 'hrsh7th/cmp-nvim-lsp' },

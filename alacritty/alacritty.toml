@@ -2,7 +2,7 @@
 normal.family = "MesloLGL Nerd Font"
 normal.style = "Bold"
 italic.style = "Bold Italic"
-size = 16.0
+size = 14.0
 
 [window]
 dimensions.columns = 300 #Full width

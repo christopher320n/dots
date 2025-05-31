@@ -1,5 +1,6 @@
-local colorscheme = "catppuccin-mocha"
+--local colorscheme = "catppuccin-mocha"
 --local colorscheme = "chalkboard"
+local colorscheme = "catppuccin-frappe"
 local bufferlinebg_chalkboard = '#36454D';
 local bufferlinebg_catppuccin = '#313445';
 local bufferlinebg_fallback = '#111111';
@@ -9,9 +10,21 @@ local function getBufferlineBgForCurrentTheme()
     return bufferlinebg_chalkboard
   elseif colorscheme == 'catppuccin-mocha' then
     return bufferlinebg_catppuccin
+  elseif colorscheme == 'catppuccin-frappe' then
+    return bufferlinebg_catppuccin
   else
-    return bufferlinebg_fallback 
+    return bufferlinebg_fallback
   end
+end
+
+getBufferlineBgForCurrentTheme()
+
+if colorscheme:find('catppuccin') then
+  local catppuccin = require("catppuccin")
+
+  catppuccin.setup({
+    transparent_background = true,
+  })
 end
 
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
@@ -29,7 +42,7 @@ vim.cmd('hi WinSeparator guifg=#FFFFFF guibg=NONE')
 --vim.cmd("hi BufferLineSeparator guifg=#36454D guibg=" .. getBufferlineBgForCurrentTheme())
 
 vim.ui.select = function(items, opts, on_choice)
-  opts = opts or {}
+  opts = opts or {transparent_background = true}
   opts.border = "rounded"  -- Set tooltip border style here: "single", "double", "rounded", etc.
   vim.ui._default_select(items, opts, on_choice)
 end
