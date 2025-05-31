@@ -1,0 +1,49 @@
+#!/bin/zsh
+
+include_hash=true
+
+while getopts "n" opt; do
+  case $opt in
+    n) include_hash=false ;;
+    *) echo "Usage: rgbconv [-n] R,G,B"; exit 1 ;;
+  esac
+done
+
+shift $((OPTIND - 1))
+
+if [[ -z "$1" ]]; then
+  echo "Usage: rgbconv [-n] R,G,B"
+  exit 1
+fi
+
+input="${1// /}"
+IFS=',' read -r r g b <<< "$input"
+
+if [[ -z "$r" || -z "$g" || -z "$b" ]]; then
+  echo "Error: Please provide three comma-separated values for R, G, and B."
+  exit 1
+fi
+
+hex=$(printf "%02x%02x%02x" $r $g $b)
+
+if $include_hash; then
+  color="#$hex"
+else
+  color="$hex"
+fi
+
+box_width=40
+color_len=${#color}
+pad_total=$((box_width - color_len))
+pad_left=$((pad_total / 2))
+pad_right=$((pad_total - pad_left))
+
+horiz_line=$(printf '─%.0s' $(seq 1 $box_width))
+pad_l=$(printf ' %.0s' $(seq 1 $pad_left))
+pad_r=$(printf ' %.0s' $(seq 1 $pad_right))
+
+echo "\nHex Code For RGB($r, $g, $b):"
+echo "┌${horiz_line}┐"
+echo "│${pad_l}${color}${pad_r}│"
+echo "└${horiz_line}┘"
+
