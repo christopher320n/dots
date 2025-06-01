@@ -141,6 +141,7 @@ source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="/Users/christopher/.config/scripts:$PATH"
+export PATH="/opt/homebrew/bin:/bin:/usr/bin"
 
 # Alias
 alias "reload"="source ~/.zshrc; clear"
@@ -151,7 +152,7 @@ alias "git pfush"="git push --force-with-lease"
 alias "editcfg"="nvim ~/.config/"
 alias "edittiles"="nvim ~/.aerospace.toml"
 alias "main"="cd ~/Desktop/Main/"
-
+alias "esc"="tmux kill-server"
 
 alias pkg='brew'
 
