@@ -125,8 +125,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 
 export PATH=~/.npm-global/bin:$PATH
 
-alias "tmuxks"="tmux kill-server"
-
 export JAVA_HOME=$(/usr/libexec/java_home -v 21.0.2)
 export M2_HOME=/opt/apache-maven-3.9.6
 export PATH=$JAVA_HOME/bin:$PATH/bin:$M2_HOME/bin
@@ -137,9 +135,47 @@ export NVM_DIR="$HOME/.nvm"
 
 # Load Angular CLI autocompletion.
 source <(ng completion script)
-source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# PL10K
+source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 export PATH="/Users/christopher/.config/scripts:$PATH"
+
+# Alias
+alias "reload"="source ~/.zshrc; clear"
+alias "tmuxks"="tmux kill-server"
+alias "edit"="nvim"
+alias "editzsh"="nvim ~/.zshrc"
+alias "git pfush"="git push --force-with-lease"
+alias "editcfg"="nvim ~/.config/"
+alias "edittiles"="nvim ~/.aerospace.toml"
+alias "main"="cd ~/Desktop/Main/"
+
+
+alias pkg='brew'
+
+pkgs() {
+    if [[ "$1" == "clean" ]]; then
+        echo "\033[34m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
+        echo "\033[34m┃\033[0mPerforming deep clean (update, upgrade, cleanup).\033[34m┃"
+        
+        # Run brew commands and capture exit status
+        brew update && brew upgrade && brew cleanup --prune=all
+        BREW_STATUS=$?  # Capture exit status of the last command
+        
+        echo "\033[34m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+
+        if [ $BREW_STATUS -eq 0 ]; then
+            # Success: Show green "PKG cleanup performed successfully."
+            echo "\033[32m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+            echo "┃       PKG cleanup performed successfully.       ┃"
+        else
+            # Failure: Show red "PKG cleanup failed."
+            echo "\033[31m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓"
+            echo "┃               PKG cleanup failed.               ┃"
+        fi
+        echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+    fi
+}
+
