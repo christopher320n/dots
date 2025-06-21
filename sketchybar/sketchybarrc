@@ -22,9 +22,9 @@ default=(
 )
 sketchybar --default "${default[@]}"
 
-source "${CONFIG_DIR}/items/hostname.sh"
-source "${CONFIG_DIR}/items/front_app.sh"
-source "${CONFIG_DIR}/items/datetime.sh"
 source "${CONFIG_DIR}/items/aerospace.sh"
+source "${CONFIG_DIR}/items/front_app.sh"
+source "${CONFIG_DIR}/items/date.sh"
+source "${CONFIG_DIR}/items/time.sh"
 
 sketchybar --update
