@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
 sketchybar --add item date center
-sketchybar --set date update_freq=60 script="${CONFIG_DIR}/plugins/date.sh"
+sketchybar --set date update_freq=60 script="${CONFIG_DIR}/plugins/date.sh" \
+           click_script="${CONFIG_DIR}/helper/open-app.sh Calendar.app"
+
