@@ -17,14 +17,20 @@ default=(
   label.color="${_SSDF_CM_SUBTEXT_1}"
   icon.padding_left=4
   icon.padding_right=4
-  label.padding_left=-2
-  label.padding_right=10
+  label.padding_left=0
+  label.padding_right=14
 )
 sketchybar --default "${default[@]}"
 
-source "${CONFIG_DIR}/items/aerospace.sh"
+# -- Left --
+source "${CONFIG_DIR}/items/decoration-icon.sh"
 source "${CONFIG_DIR}/items/front_app.sh"
+source "${CONFIG_DIR}/items/aerospace.sh"
+
+# -- Center --
 source "${CONFIG_DIR}/items/date.sh"
+
+# -- Right --
 source "${CONFIG_DIR}/items/time.sh"
 
 sketchybar --update
