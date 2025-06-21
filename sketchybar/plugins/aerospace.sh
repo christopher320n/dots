@@ -10,10 +10,8 @@ fi
 
 if [ "${_SSDF_WS_ID}" = "${_SSDF_WS_FOCUSED}" ]; then
     sketchybar --set $NAME \
-        label="1" \
         background.color="${_SSDF_CM_SUBTEXT_1}"
 else
     sketchybar --set $NAME background.drawing=off \
-        label="●"
         background.color=none
 fi
