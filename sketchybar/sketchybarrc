@@ -6,8 +6,7 @@ PLUGIN_DIR="$CONFIG_DIR/plugins"
 sketchybar --bar position=top \
                  height=30 \
                  color="${_COLOUR_BACKGROUND_MAIN_TRANS}" \
-                 blur_radius=32 \
-                 topmost=on \
+                 blur_radius=32 
 
 default=(
   padding_left=0
