@@ -2,13 +2,10 @@
 
 source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
 
-#sketchybar --add item hostname left \
-#           --set hostname icon="" \
-#           click_script="${CONFIG_DIR}/helper/open-other.sh ~/Desktop/Main/"
-
 sketchybar --add item main.icon left                                                      \
               --set main.icon icon=􁈸                                                        \
                                icon.padding_right=-7 \
+                               script="sketchybar -m --set main.icon popup.drawing=off" \
                                click_script="${CONFIG_DIR}/helper/open-app.sh; sketchybar -m --set \$NAME popup.drawing=toggle" \
                                popup.background.drawing=on \
                                popup.background.border_width=5                                \
@@ -16,8 +13,9 @@ sketchybar --add item main.icon left                                            
                                popup.background.color="${_COLOUR_BACKGROUND_MAIN_TRANS}" \
                                popup.background.border_color="${_COLOUR_BORDER}" \
                                popup.topmost=on \
-                               popup.y_offset=20 \
+                               popup.y_offset=0 \
                                popup.blur_radius=32 \
+                               --subscribe main.icon mouse.exited.global \
                                                                                               \
               --add item browser popup.main.icon                                      \
               --set browser icon=􀎭                                                     \
@@ -27,7 +25,6 @@ sketchybar --add item main.icon left                                            
                                label.padding_left=20 \
                                y_offset=-5\
                                click_script="open -a 'LibreWolf';                       
-                                             ${CONFIG_DIR}/helper/open-app.sh;
                                              sketchybar -m --set main.icon popup.drawing=off"\
               --add item terminal popup.main.icon                                      \
               --set terminal icon=􂫌                                                    \
