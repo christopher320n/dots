@@ -7,8 +7,9 @@ source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
 #           click_script="${CONFIG_DIR}/helper/open-other.sh ~/Desktop/Main/"
 
 sketchybar --add item main.icon left                                                      \
-              --set main.icon icon=◤                                                        \
-                               click_script="sketchybar -m --set \$NAME popup.drawing=toggle" \
+              --set main.icon icon=􁈸                                                        \
+                               icon.padding_right=-7 \
+                               click_script="${CONFIG_DIR}/helper/open-app.sh; sketchybar -m --set \$NAME popup.drawing=toggle" \
                                popup.background.drawing=on \
                                popup.background.border_width=5                                \
                                popup.background.corner_radius=7                                \
@@ -26,9 +27,10 @@ sketchybar --add item main.icon left                                            
                                label.padding_left=20 \
                                y_offset=-5\
                                click_script="open -a 'LibreWolf';                       
+                                             ${CONFIG_DIR}/helper/open-app.sh;
                                              sketchybar -m --set main.icon popup.drawing=off"\
               --add item terminal popup.main.icon                                      \
-              --set terminal icon=􂝖                                                     \
+              --set terminal icon=􂫌                                                    \
                                padding_left=10\
                                padding_right=10\
                                label="Terminal"                                               \
