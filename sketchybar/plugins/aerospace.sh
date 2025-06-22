@@ -8,6 +8,8 @@ if [[ -z "${_SSDF_WS_FOCUSED}" ]]; then
     _SSDF_WS_FOCUSED=$(aerospace list-workspaces --focused)
 fi
 
+sketchybar -m --set main.icon popup.drawing=off
+
 if [ "${_SSDF_WS_ID}" = "${_SSDF_WS_FOCUSED}" ]; then
     sketchybar --set $NAME \
         background.color="${_SSDF_CM_SUBTEXT_1}"

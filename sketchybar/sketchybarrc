@@ -23,7 +23,7 @@ default=(
 sketchybar --default "${default[@]}"
 
 # -- Left --
-source "${CONFIG_DIR}/items/decoration-icon.sh"
+source "${CONFIG_DIR}/items/main-icon.sh"
 source "${CONFIG_DIR}/items/front_app.sh"
 source "${CONFIG_DIR}/items/aerospace.sh"
 
