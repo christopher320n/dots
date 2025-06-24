@@ -1,13 +1,12 @@
-require "user.options"
-require "user.keymaps"
-require "user.plugins"
-require "user.theme.colorscheme"
-require "user.cmp"
-require "user.lsp"
-require "user.treesitter"
-require "user.lualine"
-require "user.nvim-tree"
-require "user.toggleterm"
-require "user.whichkey"
-require "user.comment"
-require "user.bufferline"
+require("config.options")
+require("config.keymaps")
+require("config.lazy")
+require("config.cmp")
+require("config.lsp")
+require("config.treesitter")
+require("config.lualine")
+require("config.nvim-tree")
+require("config.toggleterm")
+require("config.whichkey")
+require("config.comment")
+require("config.bufferline")
