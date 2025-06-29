@@ -8,7 +8,7 @@ sketchybar --add item main.icon left                                            
                                script="sketchybar -m --set main.icon popup.drawing=off" \
                                click_script="${CONFIG_DIR}/helper/open-app.sh; sketchybar -m --set \$NAME popup.drawing=toggle" \
                                popup.background.drawing=on \
-                               popup.background.border_width=5                                \
+                               popup.background.border_width=3                                \
                                popup.background.corner_radius=7                                \
                                popup.background.color="${_COLOUR_BACKGROUND_MAIN_TRANS}" \
                                popup.background.border_color="${_COLOUR_BORDER}" \
@@ -19,20 +19,20 @@ sketchybar --add item main.icon left                                            
                                                                                               \
               --add item browser popup.main.icon                                      \
               --set browser icon=􀎭                                                     \
-                               padding_left=10\
-                               padding_right=10\
+                               padding_left=10 \
+                               padding_right=10 \
                                label="LibreWolf"                                               \
                                label.padding_left=20 \
-                               y_offset=-5\
+                               y_offset=-5 \
                                click_script="open -a 'LibreWolf';                       
-                                             sketchybar -m --set main.icon popup.drawing=off"\
+                                             sketchybar -m --set main.icon popup.drawing=off" \
               --add item terminal popup.main.icon                                      \
               --set terminal icon=􂫌                                                    \
-                               padding_left=10\
-                               padding_right=10\
+                               padding_left=10 \
+                               padding_right=10 \
                                label="Terminal"                                               \
                                label.padding_left=20 \
-                               y_offset=-5\
+                               y_offset=-5 \
                                click_script="open -a 'kitty';                       
                                              sketchybar -m --set main.icon popup.drawing=off"\
               --add item finder popup.main.icon                                      \
