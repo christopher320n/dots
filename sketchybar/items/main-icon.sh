@@ -3,10 +3,10 @@
 source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
 
 sketchybar --add item main.icon left                                                      \
-              --set main.icon icon=􀝜                                                       \
-                               icon.padding_right=-7 \
+              --set main.icon icon=􀕨                                                       \
+                               icon.y_offset=1 \
                                script="sketchybar -m --set main.icon popup.drawing=off" \
-                               click_script="${CONFIG_DIR}/helper/open-app.sh; sketchybar -m --set \$NAME popup.drawing=toggle" \
+                               click_script="sketchybar -m --set \$NAME popup.drawing=toggle" \
                                popup.background.drawing=on \
                                popup.background.border_width=3                                \
                                popup.background.corner_radius=7                                \
