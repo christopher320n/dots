@@ -11,9 +11,7 @@ fi
 sketchybar -m --set main.icon popup.drawing=off
 
 if [ "${_SSDF_WS_ID}" = "${_SSDF_WS_FOCUSED}" ]; then
-    sketchybar --set $NAME \
-        background.color="${_SSDF_CM_SUBTEXT_1}"
+    sketchybar --animate exp 8 --set $NAME background.color="${_SSDF_CM_SUBTEXT_1}"
 else
-    sketchybar --set $NAME background.drawing=off \
-        background.color=none
+    sketchybar --set $NAME background.drawing=off background.color=none
 fi
