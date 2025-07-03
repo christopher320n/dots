@@ -124,7 +124,6 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 export PATH=~/.npm-global/bin:$PATH
-
 export JAVA_HOME=$(/usr/libexec/java_home -v 21.0.2)
 export M2_HOME=/opt/apache-maven-3.9.6
 export PATH=$JAVA_HOME/bin:$PATH/bin:$M2_HOME/bin
@@ -151,7 +150,9 @@ alias "git pfush"="git push --force-with-lease"
 alias "editcfg"="nvim ~/.config/"
 alias "edittiles"="nvim ~/.aerospace.toml"
 alias "main"="cd ~/Desktop/Main/"
-alias "ic"="cd '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs'"
+alias "ic"="cd '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud'"
+alias "scratch"="nvim '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud/misc/scratchpad.md'"
+alias "atlas"="cd '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud/misc/Atlas/'"
 alias "dt"="cd ~/Desktop/"
 alias "cc"="clear"
 alias "esc"="tmux kill-server"
@@ -183,3 +184,6 @@ pkgs() {
 }
 
 export PATH="$HOME/.config/scripts:$PATH"
+export XDG_CONFIG_HOME="$HOME/.config"
+export PATH=$PATH:/Users/christopher/.spicetify
+export PATH="${HOME}/.local/bin":${PATH}
