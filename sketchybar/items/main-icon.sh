@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
+source "${CONFIG_DIR}/themes/catppuccin-frappe.sh"
 
 sketchybar --add item main.icon left                                                      \
-              --set main.icon icon=􀀁                                                       \
+              --set main.icon icon=􀆼                                                       \
                                icon.y_offset=1 \
                                script="sketchybar -m --set main.icon popup.drawing=off" \
                                click_script="sketchybar -m --set \$NAME popup.drawing=toggle" \
                                popup.background.drawing=on \
                                popup.background.border_width=3                                \
-                               popup.background.corner_radius=7                                \
+                               popup.background.corner_radius=10                               \
                                popup.background.color="${_COLOUR_BACKGROUND_MAIN_TRANS}" \
                                popup.background.border_color="${_COLOUR_BORDER}" \
                                popup.topmost=on \
@@ -18,13 +18,13 @@ sketchybar --add item main.icon left                                            
                                --subscribe main.icon mouse.exited.global \
                                                                                               \
               --add item browser popup.main.icon                                      \
-              --set browser icon=􀎭                                                     \
+              --set browser icon=􀫸                                                     \
                                padding_left=10 \
                                padding_right=10 \
-                               label="LibreWolf"                                               \
+                               label="Orion"                                               \
                                label.padding_left=20 \
                                y_offset=-5 \
-                               click_script="open -a 'LibreWolf';                       
+                               click_script="open -a 'Orion';                       
                                              sketchybar -m --set main.icon popup.drawing=off" \
               --add item terminal popup.main.icon                                      \
               --set terminal icon=􂫌                                                    \

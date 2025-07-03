@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
+source "${CONFIG_DIR}/themes/catppuccin-frappe.sh"
 
 _SSDF_WS_ID=$1
 _SSDF_WS_FOCUSED="${FOCUSED_WORKSPACE}"

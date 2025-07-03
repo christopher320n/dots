@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
+source "${CONFIG_DIR}/themes/catppuccin-frappe.sh"
 PLUGIN_DIR="$CONFIG_DIR/plugins"
 
 sketchybar --bar position=top \
@@ -24,12 +24,12 @@ sketchybar --default "${default[@]}"
 
 # -- Left --
 source "${CONFIG_DIR}/items/main-icon.sh"
-source "${CONFIG_DIR}/items/aerospace.sh"
 
 # -- Center --
-source "${CONFIG_DIR}/items/date.sh"
+source "${CONFIG_DIR}/items/aerospace.sh"
 
 # -- Right --
 source "${CONFIG_DIR}/items/time.sh"
+source "${CONFIG_DIR}/items/date.sh"
 
 sketchybar --update

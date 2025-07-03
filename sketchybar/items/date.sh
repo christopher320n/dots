@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-sketchybar --add item date center
+sketchybar --add item date right
 sketchybar --set date update_freq=1 script="${CONFIG_DIR}/plugins/date.sh" \
-           click_script="${CONFIG_DIR}/helper/open-app.sh; open -a Calendar.app"
+                 padding_right=-14 \
+                 click_script="open -a Calendar.app"
 
