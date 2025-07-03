@@ -7,6 +7,7 @@
 node_modules/
 dist/
 
+duckduckgo/
 Quixel/
 StardewValley/
 stetic/
