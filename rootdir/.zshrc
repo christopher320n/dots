@@ -184,6 +184,5 @@ pkgs() {
 }
 
 export PATH="$HOME/.config/scripts:$PATH"
-export XDG_CONFIG_HOME="$HOME/.config"
 export PATH=$PATH:/Users/christopher/.spicetify
 export PATH="${HOME}/.local/bin":${PATH}
