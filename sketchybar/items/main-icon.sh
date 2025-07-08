@@ -3,7 +3,7 @@
 source "${CONFIG_DIR}/themes/catppuccin-frappe.sh"
 
 sketchybar --add item main.icon left                                                      \
-              --set main.icon icon=􀆼                                                       \
+              --set main.icon icon=◤                                                       \
                                icon.y_offset=1 \
                                script="sketchybar -m --set main.icon popup.drawing=off" \
                                click_script="sketchybar -m --set \$NAME popup.drawing=toggle" \
