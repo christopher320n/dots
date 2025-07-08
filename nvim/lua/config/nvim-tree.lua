@@ -9,6 +9,7 @@ require "nvim-tree".setup {
   },
   filters = {
     dotfiles = true,
+    custom = { "*.csproj" }
   },
   modified = {
     enable = true,
