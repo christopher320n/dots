@@ -1,0 +1,3 @@
+aerospace reload-config
+sketchybar --reload
+brew services restart borders
