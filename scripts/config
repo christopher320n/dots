@@ -1,50 +1,65 @@
 #!/bin/zsh
 
-spinny_wheel() {
-  local pid=$!
+loading_icon() {
+  local pid=$1
   local delay=0.1
   local spinstr='|/-\'
   echo -n "Reloading config... "
-  while ps -p $pid > /dev/null 2>&1; do
-    local temp=${spinstr#?}
+  while kill -0 $pid 2>/dev/null; do
     printf " [%c]  " "$spinstr"
-    local spinstr=$temp${spinstr%"$temp"}
+    spinstr=${spinstr#?}${spinstr%${spinstr#?}}
     sleep $delay
     printf "\b\b\b\b\b\b"
   done
   echo ""
 }
 
-if [[ "$1" = "reload" ]]; then
+reload_config() {
   (
     sleep 0.5
     aerospace reload-config > /dev/null 2>&1 &&
     sketchybar --reload > /dev/null 2>&1 &&
     brew services restart borders > /dev/null 2>&1
   ) &
+  local pid=$!
+  loading_icon $pid
+  wait $pid
+  [[ $? -eq 0 ]] && echo "Config reloaded successfully!" || echo "Config reload has failed."
+}
 
-  spinny_wheel $!
+switch_config() {
+  local branch=$1
+  cd ~/.config || exit 1
+  git switch "$branch" > /dev/null 2>&1
+  ./scripts/config reload
+}
 
-  wait $!
-  if [[ $? -eq 0 ]]; then
-    echo "Config reloaded successfully!"
-  else
-    echo "Config reload has failed."
-  fi
-elif [[ "$1" = "switch" ]]; then
- if [[ "$2" = "round" ]]; then
+case "$1" in
+  reload)
+    reload_config
+    ;;
+  query)
     cd ~/.config
-    git switch main
-    ./scripts/config reload
-  elif [[ "$2" = "square" ]]; then
-    cd ~/.config
-    git switch square-borders
-    ./scripts/config reload
-  fi 
-  :
-
-else
-  echo 'Config commands:'
-  echo '- config reload'
-fi
+    echo -n 'Current config: ' && git rev-parse --abbrev-ref HEAD
+    ;;
+  switch)
+    case "$2" in
+      round)
+        switch_config main
+        ;;
+      square)
+        switch_config square-borders
+        ;;
+      *)
+        echo "Unknown switch target: $2"
+        ;;
+    esac
+    ;;
+  *)
+    echo 'Config commands:'
+    echo '- config reload'
+    echo '- config query'
+    echo '- config switch round|square'
+    ;;
+esac
 
