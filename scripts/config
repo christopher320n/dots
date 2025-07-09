@@ -1,0 +1,50 @@
+#!/bin/zsh
+
+spinny_wheel() {
+  local pid=$!
+  local delay=0.1
+  local spinstr='|/-\'
+  echo -n "Reloading config... "
+  while ps -p $pid > /dev/null 2>&1; do
+    local temp=${spinstr#?}
+    printf " [%c]  " "$spinstr"
+    local spinstr=$temp${spinstr%"$temp"}
+    sleep $delay
+    printf "\b\b\b\b\b\b"
+  done
+  echo ""
+}
+
+if [[ "$1" = "reload" ]]; then
+  (
+    sleep 0.5
+    aerospace reload-config > /dev/null 2>&1 &&
+    sketchybar --reload > /dev/null 2>&1 &&
+    brew services restart borders > /dev/null 2>&1
+  ) &
+
+  spinny_wheel $!
+
+  wait $!
+  if [[ $? -eq 0 ]]; then
+    echo "Config reloaded successfully!"
+  else
+    echo "Config reload has failed."
+  fi
+elif [[ "$1" = "switch" ]]; then
+ if [[ "$2" = "round" ]]; then
+    cd ~/.config
+    git switch main
+    ./scripts/config reload
+  elif [[ "$2" = "square" ]]; then
+    cd ~/.config
+    git switch square-borders
+    ./scripts/config reload
+  fi 
+  :
+
+else
+  echo 'Config commands:'
+  echo '- config reload'
+fi
+
