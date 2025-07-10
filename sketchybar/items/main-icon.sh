@@ -8,8 +8,7 @@ sketchybar --add item main.icon left                                            
                                script="sketchybar -m --set main.icon popup.drawing=off" \
                                click_script="sketchybar -m --set \$NAME popup.drawing=toggle" \
                                popup.background.drawing=on \
-                               popup.background.border_width=3                                \
-                               popup.background.corner_radius=10                               \
+                               popup.background.border_width=5                                \
                                popup.background.color="${_COLOUR_BACKGROUND_MAIN_TRANS}" \
                                popup.background.border_color="${_COLOUR_BORDER}" \
                                popup.topmost=on \
