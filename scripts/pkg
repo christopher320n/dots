@@ -1,7 +1,5 @@
 #!/bin/zsh
 
-alias "pkg"="brew"
-
 if [[ "$1" == "clean" ]]; then
     echo "\033[34m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\033[0m"
     echo "\033[34m┃\033[0mPerforming deep clean (update, upgrade, cleanup).\033[34m┃"
@@ -19,4 +17,40 @@ if [[ "$1" == "clean" ]]; then
         echo "┃               PKG cleanup failed.               ┃"
     fi
     echo "┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\033[0m"
+elif [[ "$1" == "install" ]]; then
+    if [[ "$2" == "" ]]; then
+        echo "Usage:"
+        echo "pkg install <package>             # Install a package"
+        echo "pkg install -c <application>      # Install a application"
+        exit 1
+    fi
+
+    if ! command -v brew &>/dev/null; then
+        echo "Error: Package manager is not installed or not in location $PATH." >&2
+        exit 1
+    fi
+
+    if [[ "$2" == "-c" ]]; then
+        if [[ -z "$3" ]]; then
+            echo "Error: No application name provided install." >&2
+            exit 1
+        fi
+
+        echo "Installing application \"$3\"..."
+        if brew install --cask "$3"; then
+            echo "Application \"$3\" installed successfully."
+        else
+            echo "Error: Failed to install application \"$3\"." >&2
+            exit 1
+        fi
+    else
+        echo "Installing package \"$2\"..."
+        if brew install "$2"; then
+            echo "Package \"$2\" installed successfully."
+        else
+            echo "Error: Failed to install package \"$2\"." >&2
+            exit 1
+        fi
+    fi
 fi
+
