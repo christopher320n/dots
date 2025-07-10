@@ -44,11 +44,11 @@ case "$1" in
     ;;
   switch)
     case "$2" in
-      round)
+      main)
         switch_config main
         ;;
-      square)
-        switch_config square-borders
+      round)
+        switch_config round-corners
         ;;
       *)
         echo "Unknown switch target: $2"
@@ -59,7 +59,7 @@ case "$1" in
     echo 'Config commands:'
     echo '- config reload'
     echo '- config query'
-    echo '- config switch round|square'
+    echo '- config switch main|round'
     ;;
 esac
 
