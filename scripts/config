@@ -17,9 +17,9 @@ loading_icon() {
 reload_config() {
   (
     sleep 0.5
+    brew services restart borders > /dev/null 2>&1
     aerospace reload-config > /dev/null 2>&1 &&
     sketchybar --reload > /dev/null 2>&1 &&
-    brew services restart borders > /dev/null 2>&1
   ) &
   local pid=$!
   loading_icon $pid
@@ -34,9 +34,26 @@ switch_config() {
   ./scripts/config reload
 }
 
+start() {
+  brew services start sketchybar
+  open -a "Aerospace"
+}
+
+remove() {
+  brew services stop borders
+  osascript -e 'quit app "Aerospace"'
+  brew services stop sketchybar
+}
+
 case "$1" in
   reload)
     reload_config
+    ;;
+  start)
+    start
+    ;;
+  remove)
+    remove
     ;;
   query)
     cd ~/.config
