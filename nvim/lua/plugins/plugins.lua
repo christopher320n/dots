@@ -7,7 +7,8 @@ return {
     config = function()
       require("catppuccin").setup({
         flavour = "frappe",
-        transparent_background = true, })
+        transparent_background = true,
+      })
       vim.cmd([[colorscheme catppuccin]])
     end,
   },
@@ -15,8 +16,8 @@ return {
   { "nvim-lua/plenary.nvim" },
   { "kyazdani42/nvim-web-devicons" },
   { "kyazdani42/nvim-tree.lua" },
-  { 'echasnovski/mini.icons' },
-  { 'rktjmp/lush.nvim' },
+  { "echasnovski/mini.icons" },
+  { "rktjmp/lush.nvim" },
   { "hrsh7th/nvim-cmp" },
   { "hrsh7th/cmp-buffer" },
   { "hrsh7th/cmp-path" },
@@ -29,6 +30,11 @@ return {
   { "neovim/nvim-lspconfig" },
   { "williamboman/nvim-lsp-installer" },
   { "mfussenegger/nvim-jdtls" },
+  {
+    "nvim-telescope/telescope.nvim",
+    tag = "0.1.8",
+    dependencies = { "nvim-lua/plenary.nvim" }
+  },
   {
     "VonHeikemen/lsp-zero.nvim",
     branch = "v3.x",
@@ -54,7 +60,7 @@ return {
   },
   {
     "nvim-treesitter/nvim-treesitter",
-    branch = 'master',
+    branch = "master",
     lazy = false
   },
   {
