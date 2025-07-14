@@ -5,7 +5,7 @@ options=(
         width=10.0
         order=above
         hidpi=on
-        active_color="gradient(top_left=0xFFC6D0F5,bottom_right=0xFF8CAAEE)"
+        active_color=0xFFC6D0F5
         inactive_color=0xFF414559
 )
 
