@@ -21,7 +21,7 @@ require("lazy").setup({
     { import = "plugins" },
   },
   install = { colorscheme = { "catppuccin-frappe" } },
-  checker = { enabled = true },
+  checker = { enabled = true, notify = false },
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
   config = function()
