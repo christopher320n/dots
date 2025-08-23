@@ -5,7 +5,7 @@ options=(
         width=10.0
         order=above
         hidpi=on
-        active_color=0xFFC6D0F5
+        active_color=0xFFCCD0DA
         inactive_color=0xFF414559
 )
 

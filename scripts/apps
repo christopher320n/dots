@@ -1,0 +1,24 @@
+#!/bin/zsh
+
+APP_DIRECTORIES=("/Applications" "$HOME/Applications")
+
+list_apps() {
+  APP_LIST=$(for dir in $APP_DIRECTORIES; do
+    if [[ -d $dir ]]; then
+      find "$dir" -iname "*.app" -maxdepth 1 | sed 's/\/Applications\///' | sed 's/\/.*//'
+    fi
+  done | sort)
+
+  SELECTED_APP=$(echo "$APP_LIST" | fzf --preview "echo {}" --preview-window=up:3 --height=40% --border --no-info --ansi \
+  --prompt="Open Application: " \
+  --color="fg:#D9E0EE,bg:#303446,prompt:#F5C2E7,hl:#B4BEFE" )
+
+  SELECTED_APP=$(echo "$SELECTED_APP" | sed 's/\.app$//')
+
+  if [[ -n "$SELECTED_APP" ]]; then
+    open "/Applications/$SELECTED_APP.app"
+  fi
+}
+
+list_apps
+
