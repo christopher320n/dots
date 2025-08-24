@@ -20,7 +20,7 @@ require("lazy").setup({
   spec = {
     { import = "plugins" },
   },
-  install = { colorscheme = { "catppuccin-frappe" } },
+  install = { colorscheme = { "catppuccin-latte" } },
   checker = { enabled = true, notify = false },
   "nvim-treesitter/nvim-treesitter",
   build = ":TSUpdate",
