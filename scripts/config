@@ -61,6 +61,9 @@ case "$1" in
       main)
         switch_config main
         ;;
+      square)
+        switch_config main
+        ;;
       round)
         switch_config round-corners
         ;;
