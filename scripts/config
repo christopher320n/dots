@@ -17,7 +17,7 @@ loading_icon() {
 reload_config() {
   (
     sleep 0.5
-    brew services restart borders > /dev/null 2>&1
+    #brew services restart borders > /dev/null 2>&1
     aerospace reload-config > /dev/null 2>&1
   ) &
   local pid=$!
