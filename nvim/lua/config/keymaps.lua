@@ -90,3 +90,5 @@ keymap("t", ",.", "<C-\\><C-N>", opts)
 -- Toggleterm
 keymap("t", "jk", "<C-c>exit<CR>", opts)
 
+-- Light Switch
+keymap('n', '<leader>cl', ":DarkLightSwitch<CR>", opts)

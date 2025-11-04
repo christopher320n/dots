@@ -1,19 +1,24 @@
 return {
   {
-    "catppuccin/nvim",
-    name = "catppuccin",
+    "neanias/everforest-nvim",
+    version = false,
     lazy = false,
     priority = 1000,
     config = function()
-      require("catppuccin").setup({
-        flavour = "frappe",
-        transparent_background = true,
-        float = {
-          transparent = true,
-          solid = true,
-        },
+      require("everforest").setup({
+        background = "medium"
       })
-      vim.cmd([[colorscheme catppuccin]])
+      vim.cmd([[colorscheme everforest]])
+    end,
+  },
+  {
+    'eliseshaffer/darklight.nvim',
+    config = function()
+      require('darklight').setup({
+        mode = 'colorscheme',                -- Sets darklight to colorscheme mode
+        light_mode_colorscheme = 'everforest', -- Sets the colorscheme to use for light mode
+        dark_mode_colorscheme = 'everforest', -- Sets the colorscheme to use for dark mode
+      })
     end,
   },
   { "nvim-lua/popup.nvim" },

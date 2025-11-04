@@ -9,4 +9,6 @@ options=(
         inactive_color=0xFF414559
 )
 
+blacklist="java,Minecraft"
+
 borders "${options[@]}"

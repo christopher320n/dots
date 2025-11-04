@@ -13,9 +13,3 @@ font_family      family='MesloLGL Nerd Font Mono' style='Bold'
 bold_font        family='MesloLGL Nerd Font Mono' style='Bold'
 font_italic      family='MesloLGL Nerd Font Mono' style='Bold Italic'
 font_bold_italic family='MesloLGL Nerd Font Mono' style='Bold Italic'
-
-
-# BEGIN_KITTY_THEME
-# Everforest Dark Hard
-include current-theme.conf
-# END_KITTY_THEME
