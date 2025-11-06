@@ -1,0 +1,10 @@
+[Libinput][13159][6403][EndGameGear XM1 Gaming Mouse]
+PointerAcceleration=-0.600
+PointerAccelerationProfile=1
+
+[Libinput][48879][57005][Mouse passthrough]
+PointerAcceleration=0.000
+PointerAccelerationProfile=1
+
+[Mouse]
+cursorSize=20

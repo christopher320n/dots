@@ -1,0 +1,31 @@
+require "nvim-tree".setup {
+  hijack_cursor = true,
+  view = {
+    side = "left",
+    width = 45,
+    adaptive_size = true,
+    signcolumn = "no",
+    number = true,
+  },
+  filters = {
+    dotfiles = true,
+    custom = { "*.csproj" }
+  },
+  modified = {
+    enable = true,
+  },
+  renderer = {
+    highlight_opened_files = "name",
+    root_folder_label = false,
+    icons = {
+      glyphs = {
+        git = {
+          untracked = "󰵺",
+          unstaged = "󰰩",
+        },
+      },
+    },
+  },
+}
+
+vim.opt.fillchars = { eob = " "}

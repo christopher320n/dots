@@ -1,0 +1,82 @@
+#!/bin/zsh
+
+loading_icon() {
+  local pid=$1
+  local delay=0.1
+  local spinstr='|/-\'
+  echo -n "Reloading config... "
+  while kill -0 $pid 2>/dev/null; do
+    printf " [%c]  " "$spinstr"
+    spinstr=${spinstr#?}${spinstr%${spinstr#?}}
+    sleep $delay
+    printf "\b\b\b\b\b\b"
+  done
+  echo ""
+}
+
+reload_config() {
+  (
+    sleep 0.5
+    #brew services restart borders > /dev/null 2>&1
+    aerospace reload-config > /dev/null 2>&1
+  ) &
+  local pid=$!
+  loading_icon $pid
+  wait $pid
+  [[ $? -eq 0 ]] && echo "Config reloaded successfully!" || echo "Config reload has failed."
+}
+
+switch_config() {
+  local branch=$1
+  cd ~/.config || exit 1
+  git switch "$branch" > /dev/null 2>&1
+  ./scripts/config reload
+}
+
+start() {
+  open -a "Aerospace"
+}
+
+remove() {
+  brew services stop borders
+  osascript -e 'quit app "Aerospace"'
+}
+
+case "$1" in
+  reload)
+    reload_config
+    ;;
+  start)
+    start
+    ;;
+  remove)
+    remove
+    ;;
+  query)
+    cd ~/.config
+    echo -n 'Current config: ' && git rev-parse --abbrev-ref HEAD
+    ;;
+  switch)
+    case "$2" in
+      main)
+        switch_config main
+        ;;
+      square)
+        switch_config main
+        ;;
+      round)
+        switch_config round-corners
+        ;;
+      *)
+        echo "Unknown switch target: $2"
+        ;;
+    esac
+    ;;
+  *)
+    echo 'Config commands:'
+    echo '- config reload'
+    echo '- config query'
+    echo '- config switch main|round'
+    ;;
+esac
+

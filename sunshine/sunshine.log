@@ -1,0 +1,640 @@
+[2025-11-06 15:05:25.262]: Info: Sunshine version: 2025.628.4510
+[2025-11-06 15:05:25.264]: Info: Package Publisher: nixpkgs
+[2025-11-06 15:05:25.264]: Info: Publisher Website: https://nixos.org
+[2025-11-06 15:05:25.264]: Info: Get support: https://github.com/NixOS/nixpkgs/issues
+[2025-11-06 15:05:25.264]: Info: config: 'capture' = kms
+[2025-11-06 15:05:25.264]: Info: config: 'stream_audio' = true
+[2025-11-06 15:05:25.264]: Info: config: 'encoder' = nvenc
+[2025-11-06 15:05:25.264]: Info: config: 'sw_preset' = ultrafast
+[2025-11-06 15:05:25.264]: Info: config: 'upnp' = enabled
+[2025-11-06 15:05:25.270]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:25.272]: Info: Found display [wayland-0]
+[2025-11-06 15:05:25.272]: Info: Found display [wayland-0]
+[2025-11-06 15:05:25.337]: Info: Found interface: zxdg_output_manager_v1(31) version 3
+[2025-11-06 15:05:25.337]: Info: Found interface: zwp_linux_dmabuf_v1(52) version 4
+[2025-11-06 15:05:25.337]: Info: Found interface: wl_output(62) version 4
+[2025-11-06 15:05:25.337]: Info: Resolution: 3840x2160
+[2025-11-06 15:05:25.337]: Info: Offset: 0x0
+[2025-11-06 15:05:25.337]: Info: Logical size: 2194x1234
+[2025-11-06 15:05:25.337]: Info: Name: HDMI-A-1
+[2025-11-06 15:05:25.337]: Info: Found monitor: SAM U28E590
+[2025-11-06 15:05:25.337]: Info: -------- Start of KMS monitor list --------
+[2025-11-06 15:05:25.337]: Info: Monitor 0 is HDMI-A-1: SAM U28E590
+[2025-11-06 15:05:25.337]: Info: --------- End of KMS monitor list ---------
+[2025-11-06 15:05:25.368]: Warning: Gamepad ds5 is disabled due to Permission denied
+[2025-11-06 15:05:25.368]: Info: Trying encoder [nvenc]
+[2025-11-06 15:05:25.368]: Info: Screencasting with KMS
+[2025-11-06 15:05:25.368]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:25.368]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:25.370]: Info: Found connector ID [111]
+[2025-11-06 15:05:25.370]: Info: Found cursor plane [79]
+[2025-11-06 15:05:25.370]: Warning: Attempting to use NVENC without CUDA support. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:05:25.370]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:25.370]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:25.370]: Info: Found connector ID [111]
+[2025-11-06 15:05:25.370]: Info: Found cursor plane [79]
+[2025-11-06 15:05:25.424]: Info: Creating encoder [h264_nvenc]
+[2025-11-06 15:05:25.424]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:25.424]: Info: Color depth: 8-bit
+[2025-11-06 15:05:25.424]: Info: Color range: JPEG
+[2025-11-06 15:05:25.430]: Error: [AVHWDeviceContext @ 0x2156d440] Cannot load libcuda.so.1
+[2025-11-06 15:05:25.430]: Error: [AVHWDeviceContext @ 0x2156d440] Could not dynamically load CUDA
+[2025-11-06 15:05:25.430]: Error: Failed to create a CUDA device: Operation not permitted
+[2025-11-06 15:05:25.430]: Info: Creating encoder [h264_nvenc]
+[2025-11-06 15:05:25.430]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:25.430]: Info: Color depth: 8-bit
+[2025-11-06 15:05:25.431]: Info: Color range: JPEG
+[2025-11-06 15:05:25.431]: Error: [AVHWDeviceContext @ 0x2156c500] Cannot load libcuda.so.1
+[2025-11-06 15:05:25.431]: Error: [AVHWDeviceContext @ 0x2156c500] Could not dynamically load CUDA
+[2025-11-06 15:05:25.431]: Error: Failed to create a CUDA device: Operation not permitted
+[2025-11-06 15:05:25.431]: Info: Encoder [nvenc] failed
+[2025-11-06 15:05:25.431]: Error: Couldn't find any working encoder matching [nvenc]
+[2025-11-06 15:05:25.431]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-11-06 15:05:25.431]: Info: Trying encoder [vaapi]
+[2025-11-06 15:05:25.431]: Info: Screencasting with KMS
+[2025-11-06 15:05:25.431]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:25.431]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:25.432]: Info: Found connector ID [111]
+[2025-11-06 15:05:25.432]: Info: Found cursor plane [79]
+[2025-11-06 15:05:25.589]: Info: System tray created
+[2025-11-06 15:05:25.755]: Warning: Monitor  doesn't support hardware encoding. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:05:25.755]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:25.755]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:25.755]: Info: Found connector ID [111]
+[2025-11-06 15:05:25.755]: Info: Found cursor plane [79]
+[2025-11-06 15:05:25.758]: Info: Creating encoder [h264_vaapi]
+[2025-11-06 15:05:25.758]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:25.758]: Info: Color depth: 8-bit
+[2025-11-06 15:05:25.758]: Info: Color range: JPEG
+[2025-11-06 15:05:25.848]: Info: vaapi vendor: VA-API NVDEC driver [direct backend]
+[2025-11-06 15:05:25.848]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:26.112]: Error: [h264_vaapi @ 0x21569a80] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2025-11-06 15:05:26.165]: Error: Could not open codec [h264_vaapi]: Function not implemented
+[2025-11-06 15:05:26.166]: Info: Creating encoder [h264_vaapi]
+[2025-11-06 15:05:26.166]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:26.166]: Info: Color depth: 8-bit
+[2025-11-06 15:05:26.166]: Info: Color range: JPEG
+[2025-11-06 15:05:26.243]: Info: vaapi vendor: VA-API NVDEC driver [direct backend]
+[2025-11-06 15:05:26.243]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:26.478]: Error: [h264_vaapi @ 0x21569a80] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2025-11-06 15:05:26.531]: Error: Could not open codec [h264_vaapi]: Function not implemented
+[2025-11-06 15:05:26.531]: Info: Encoder [vaapi] failed
+[2025-11-06 15:05:26.532]: Info: Trying encoder [software]
+[2025-11-06 15:05:26.532]: Info: Screencasting with KMS
+[2025-11-06 15:05:26.532]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:26.532]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:26.532]: Info: Found connector ID [111]
+[2025-11-06 15:05:26.532]: Info: Found cursor plane [79]
+[2025-11-06 15:05:26.534]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:26.534]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:26.534]: Info: Color depth: 8-bit
+[2025-11-06 15:05:26.534]: Info: Color range: JPEG
+[2025-11-06 15:05:26.534]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:26.544]: Info: [libx264 @ 0x21569a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:26.545]: Info: [libx264 @ 0x21569a80] profile Constrained Baseline, level 4.2, 4:2:0, 8-bit
+[2025-11-06 15:05:26.592]: Warning: [libx264 @ 0x21569a80] VBV underflow (frame 0, -32932 bits)
+[2025-11-06 15:05:26.594]: Info: [libx264 @ 0x21569a80] frame I:1     Avg QP:40.00  size:  6929
+[2025-11-06 15:05:26.594]: Info: [libx264 @ 0x21569a80] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:26.594]: Info: [libx264 @ 0x21569a80] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:05:26.594]: Info: [libx264 @ 0x21569a80] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:05:26.594]: Info: [libx264 @ 0x21569a80] i8c dc,h,v,p: 100%  0%  0%  0%
+[2025-11-06 15:05:26.594]: Info: [libx264 @ 0x21569a80] kb/s:3325.92
+[2025-11-06 15:05:26.595]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:26.595]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:26.595]: Info: Color depth: 8-bit
+[2025-11-06 15:05:26.595]: Info: Color range: JPEG
+[2025-11-06 15:05:26.595]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:26.597]: Info: [libx264 @ 0x21569a80] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:26.597]: Info: [libx264 @ 0x21569a80] profile High 4:4:4 Predictive, level 4.2, 4:4:4, 8-bit
+[2025-11-06 15:05:26.645]: Warning: [libx264 @ 0x21569a80] VBV underflow (frame 0, -41108 bits)
+[2025-11-06 15:05:26.645]: Info: [libx264 @ 0x21569a80] frame I:1     Avg QP:40.00  size:  7951
+[2025-11-06 15:05:26.645]: Info: [libx264 @ 0x21569a80] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:26.645]: Info: [libx264 @ 0x21569a80] coded y,u,v intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:05:26.645]: Info: [libx264 @ 0x21569a80] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:05:26.645]: Info: [libx264 @ 0x21569a80] kb/s:3816.48
+[2025-11-06 15:05:26.649]: Info: Screencasting with KMS
+[2025-11-06 15:05:26.649]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:26.649]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:26.650]: Info: Found connector ID [111]
+[2025-11-06 15:05:26.650]: Info: Found cursor plane [79]
+[2025-11-06 15:05:26.652]: Info: 
+[2025-11-06 15:05:26.652]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-11-06 15:05:26.652]: Info: 
+[2025-11-06 15:05:26.652]: Info: Found H.264 encoder: libx264 [software]
+[2025-11-06 15:05:26.656]: Info: Adding avahi service nixos
+[2025-11-06 15:05:26.657]: Info: Configuration UI available at [https://localhost:47990]
+[2025-11-06 15:05:27.498]: Info: Avahi service nixos successfully established.
+[2025-11-06 15:05:32.459]: Info: Trying encoder [nvenc]
+[2025-11-06 15:05:32.459]: Info: Screencasting with KMS
+[2025-11-06 15:05:32.459]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:32.459]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:32.459]: Info: Found connector ID [111]
+[2025-11-06 15:05:32.460]: Info: Found cursor plane [79]
+[2025-11-06 15:05:32.460]: Warning: Attempting to use NVENC without CUDA support. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:05:32.460]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:32.460]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:32.460]: Info: Found connector ID [111]
+[2025-11-06 15:05:32.460]: Info: Found cursor plane [79]
+[2025-11-06 15:05:32.498]: Info: Creating encoder [h264_nvenc]
+[2025-11-06 15:05:32.498]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:32.498]: Info: Color depth: 8-bit
+[2025-11-06 15:05:32.498]: Info: Color range: JPEG
+[2025-11-06 15:05:32.574]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:32.575]: Error: [h264_nvenc @ 0x7fbc6c3d2840] Cannot load libnvidia-encode.so.1
+[2025-11-06 15:05:32.575]: Error: [h264_nvenc @ 0x7fbc6c3d2840] The minimum required Nvidia driver for nvenc is 520.56.06 or newer
+[2025-11-06 15:05:32.625]: Error: Could not open codec [h264_nvenc]: Operation not permitted
+[2025-11-06 15:05:32.625]: Info: Encoder [nvenc] failed
+[2025-11-06 15:05:32.625]: Error: Couldn't find any working encoder matching [nvenc]
+[2025-11-06 15:05:32.625]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-11-06 15:05:32.625]: Info: Trying encoder [vaapi]
+[2025-11-06 15:05:32.625]: Info: Screencasting with KMS
+[2025-11-06 15:05:32.625]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:32.625]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:32.625]: Info: Found connector ID [111]
+[2025-11-06 15:05:32.626]: Info: Found cursor plane [79]
+[2025-11-06 15:05:32.751]: Warning: Monitor  doesn't support hardware encoding. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:05:32.751]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:32.751]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:32.751]: Info: Found connector ID [111]
+[2025-11-06 15:05:32.752]: Info: Found cursor plane [79]
+[2025-11-06 15:05:32.754]: Info: Creating encoder [h264_vaapi]
+[2025-11-06 15:05:32.754]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:32.754]: Info: Color depth: 8-bit
+[2025-11-06 15:05:32.754]: Info: Color range: JPEG
+[2025-11-06 15:05:32.829]: Info: vaapi vendor: VA-API NVDEC driver [direct backend]
+[2025-11-06 15:05:32.829]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:33.038]: Error: [h264_vaapi @ 0x7fbc6c3d2840] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2025-11-06 15:05:33.088]: Error: Could not open codec [h264_vaapi]: Function not implemented
+[2025-11-06 15:05:33.088]: Info: Encoder [vaapi] failed
+[2025-11-06 15:05:33.089]: Info: Trying encoder [software]
+[2025-11-06 15:05:33.089]: Info: Screencasting with KMS
+[2025-11-06 15:05:33.089]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:33.089]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:33.089]: Info: Found connector ID [111]
+[2025-11-06 15:05:33.089]: Info: Found cursor plane [79]
+[2025-11-06 15:05:33.091]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:33.091]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:33.091]: Info: Color depth: 8-bit
+[2025-11-06 15:05:33.091]: Info: Color range: JPEG
+[2025-11-06 15:05:33.091]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:33.093]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:33.093]: Info: [libx264 @ 0x7fbc6c3d2840] profile Constrained Baseline, level 4.2, 4:2:0, 8-bit
+[2025-11-06 15:05:33.132]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -32932 bits)
+[2025-11-06 15:05:33.133]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  6929
+[2025-11-06 15:05:33.133]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:33.133]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:05:33.133]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:05:33.133]: Info: [libx264 @ 0x7fbc6c3d2840] i8c dc,h,v,p: 100%  0%  0%  0%
+[2025-11-06 15:05:33.133]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3325.92
+[2025-11-06 15:05:33.133]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:33.133]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:33.133]: Info: Color depth: 8-bit
+[2025-11-06 15:05:33.133]: Info: Color range: JPEG
+[2025-11-06 15:05:33.133]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:33.135]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:33.135]: Info: [libx264 @ 0x7fbc6c3d2840] profile High 4:4:4 Predictive, level 4.2, 4:4:4, 8-bit
+[2025-11-06 15:05:33.167]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -41108 bits)
+[2025-11-06 15:05:33.168]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  7951
+[2025-11-06 15:05:33.168]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:33.168]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,u,v intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:05:33.168]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:05:33.168]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3816.48
+[2025-11-06 15:05:33.172]: Info: Screencasting with KMS
+[2025-11-06 15:05:33.172]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:33.172]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:33.172]: Info: Found connector ID [111]
+[2025-11-06 15:05:33.173]: Info: Found cursor plane [79]
+[2025-11-06 15:05:33.175]: Info: 
+[2025-11-06 15:05:33.175]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-11-06 15:05:33.175]: Info: 
+[2025-11-06 15:05:33.175]: Info: Found H.264 encoder: libx264 [software]
+[2025-11-06 15:05:33.175]: Info: Executing [Desktop]
+[2025-11-06 15:05:33.188]: Info: New streaming session started [active sessions: 1]
+[2025-11-06 15:05:33.211]: Info: CLIENT CONNECTED
+[2025-11-06 15:05:33.211]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:33.212]: Info: Found display [wayland-0]
+[2025-11-06 15:05:33.212]: Info: Found interface: zxdg_output_manager_v1(31) version 3
+[2025-11-06 15:05:33.212]: Info: Found interface: zwp_linux_dmabuf_v1(52) version 4
+[2025-11-06 15:05:33.212]: Info: Found interface: wl_output(62) version 4
+[2025-11-06 15:05:33.212]: Info: Resolution: 3840x2160
+[2025-11-06 15:05:33.212]: Info: Offset: 0x0
+[2025-11-06 15:05:33.212]: Info: Logical size: 2194x1234
+[2025-11-06 15:05:33.212]: Info: Name: HDMI-A-1
+[2025-11-06 15:05:33.212]: Info: Found monitor: SAM U28E590
+[2025-11-06 15:05:33.212]: Info: -------- Start of KMS monitor list --------
+[2025-11-06 15:05:33.212]: Info: Monitor 0 is HDMI-A-1: SAM U28E590
+[2025-11-06 15:05:33.212]: Info: --------- End of KMS monitor list ---------
+[2025-11-06 15:05:33.212]: Info: Screencasting with KMS
+[2025-11-06 15:05:33.212]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:33.212]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:33.212]: Info: Found connector ID [111]
+[2025-11-06 15:05:33.213]: Info: Found cursor plane [79]
+[2025-11-06 15:05:33.246]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:33.246]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:33.246]: Info: Color depth: 8-bit
+[2025-11-06 15:05:33.246]: Info: Color range: MPEG
+[2025-11-06 15:05:33.246]: Info: Streaming bitrate is 117964000
+[2025-11-06 15:05:33.248]: Info: [libx264 @ 0x7fbc480025c0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:33.250]: Info: [libx264 @ 0x7fbc480025c0] profile Constrained Baseline, level 5.1, 4:2:0, 8-bit
+[2025-11-06 15:05:33.259]: Info: Minimum frame time set to 16.6667ms, based on client-requested target framerate 60.
+[2025-11-06 15:05:33.736]: Info: Setting default sink to: [sink-sunshine-surround51]
+[2025-11-06 15:05:33.736]: Info: Found default monitor by name: sink-sunshine-surround51.monitor
+[2025-11-06 15:05:33.758]: Info: Opus initialized: 48 kHz, 6 channels, 1536 kbps (total), LOWDELAY
+[2025-11-06 15:05:34.662]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:05:41.510]: Info: CLIENT DISCONNECTED
+[2025-11-06 15:05:41.512]: Info: Setting default sink to: [alsa_output.pci-0000_28_00.4.iec958-stereo]
+[2025-11-06 15:05:41.541]: Info: [libx264 @ 0x7fbc480025c0] frame I:5     Avg QP: 8.87  size:245226
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] frame P:275   Avg QP: 0.53  size: 85562
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] mb P  I16..4:  0.7%  0.0%  0.0%  P16..4: 62.7%  0.0%  0.0%  0.0%  0.0%    skip:36.6%
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] coded y,uvDC,uvAC intra: 62.5% 58.3% 52.0% inter: 27.2% 13.2% 12.9%
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] i16 v,h,dc,p: 42% 22% 19% 18%
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] i8c dc,h,v,p: 62% 22% 12%  4%
+[2025-11-06 15:05:41.543]: Info: [libx264 @ 0x7fbc480025c0] kb/s:42438.47
+[2025-11-06 15:05:52.084]: Info: Trying encoder [nvenc]
+[2025-11-06 15:05:52.084]: Info: Screencasting with KMS
+[2025-11-06 15:05:52.084]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.084]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.085]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.085]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.085]: Warning: Attempting to use NVENC without CUDA support. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:05:52.085]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.085]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.085]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.086]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.093]: Info: Creating encoder [h264_nvenc]
+[2025-11-06 15:05:52.093]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:52.093]: Info: Color depth: 8-bit
+[2025-11-06 15:05:52.093]: Info: Color range: JPEG
+[2025-11-06 15:05:52.174]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:52.174]: Error: [h264_nvenc @ 0x7fbc6c3d2840] Cannot load libnvidia-encode.so.1
+[2025-11-06 15:05:52.175]: Error: [h264_nvenc @ 0x7fbc6c3d2840] The minimum required Nvidia driver for nvenc is 520.56.06 or newer
+[2025-11-06 15:05:52.225]: Error: Could not open codec [h264_nvenc]: Operation not permitted
+[2025-11-06 15:05:52.225]: Info: Encoder [nvenc] failed
+[2025-11-06 15:05:52.226]: Error: Couldn't find any working encoder matching [nvenc]
+[2025-11-06 15:05:52.226]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-11-06 15:05:52.226]: Info: Trying encoder [vaapi]
+[2025-11-06 15:05:52.226]: Info: Screencasting with KMS
+[2025-11-06 15:05:52.226]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.226]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.226]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.226]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.353]: Warning: Monitor  doesn't support hardware encoding. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:05:52.353]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.354]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.354]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.354]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.356]: Info: Creating encoder [h264_vaapi]
+[2025-11-06 15:05:52.356]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:52.356]: Info: Color depth: 8-bit
+[2025-11-06 15:05:52.356]: Info: Color range: JPEG
+[2025-11-06 15:05:52.430]: Info: vaapi vendor: VA-API NVDEC driver [direct backend]
+[2025-11-06 15:05:52.430]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:52.633]: Error: [h264_vaapi @ 0x7fbc6c3d2840] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2025-11-06 15:05:52.681]: Error: Could not open codec [h264_vaapi]: Function not implemented
+[2025-11-06 15:05:52.682]: Info: Encoder [vaapi] failed
+[2025-11-06 15:05:52.682]: Info: Trying encoder [software]
+[2025-11-06 15:05:52.682]: Info: Screencasting with KMS
+[2025-11-06 15:05:52.682]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.682]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.683]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.683]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.685]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:52.685]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:52.685]: Info: Color depth: 8-bit
+[2025-11-06 15:05:52.685]: Info: Color range: JPEG
+[2025-11-06 15:05:52.685]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:52.686]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:52.687]: Info: [libx264 @ 0x7fbc6c3d2840] profile Constrained Baseline, level 4.2, 4:2:0, 8-bit
+[2025-11-06 15:05:52.718]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -32932 bits)
+[2025-11-06 15:05:52.718]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:51.00  size:  6929
+[2025-11-06 15:05:52.718]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:52.718]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:05:52.718]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:05:52.718]: Info: [libx264 @ 0x7fbc6c3d2840] i8c dc,h,v,p: 100%  0%  0%  0%
+[2025-11-06 15:05:52.719]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3325.92
+[2025-11-06 15:05:52.719]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:52.719]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:52.719]: Info: Color depth: 8-bit
+[2025-11-06 15:05:52.719]: Info: Color range: JPEG
+[2025-11-06 15:05:52.719]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:05:52.721]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:52.721]: Info: [libx264 @ 0x7fbc6c3d2840] profile High 4:4:4 Predictive, level 4.2, 4:4:4, 8-bit
+[2025-11-06 15:05:52.765]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -41108 bits)
+[2025-11-06 15:05:52.765]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  7951
+[2025-11-06 15:05:52.765]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:05:52.765]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,u,v intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:05:52.765]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:05:52.765]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3816.48
+[2025-11-06 15:05:52.768]: Info: Screencasting with KMS
+[2025-11-06 15:05:52.768]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.769]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.769]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.769]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.771]: Info: 
+[2025-11-06 15:05:52.771]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-11-06 15:05:52.771]: Info: 
+[2025-11-06 15:05:52.771]: Info: Found H.264 encoder: libx264 [software]
+[2025-11-06 15:05:52.780]: Info: New streaming session started [active sessions: 1]
+[2025-11-06 15:05:52.797]: Info: CLIENT CONNECTED
+[2025-11-06 15:05:52.797]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.797]: Info: Found display [wayland-0]
+[2025-11-06 15:05:52.798]: Info: Found interface: zxdg_output_manager_v1(31) version 3
+[2025-11-06 15:05:52.798]: Info: Found interface: zwp_linux_dmabuf_v1(52) version 4
+[2025-11-06 15:05:52.798]: Info: Found interface: wl_output(62) version 4
+[2025-11-06 15:05:52.798]: Info: Resolution: 3840x2160
+[2025-11-06 15:05:52.798]: Info: Offset: 0x0
+[2025-11-06 15:05:52.798]: Info: Logical size: 2194x1234
+[2025-11-06 15:05:52.798]: Info: Name: HDMI-A-1
+[2025-11-06 15:05:52.798]: Info: Found monitor: SAM U28E590
+[2025-11-06 15:05:52.798]: Info: -------- Start of KMS monitor list --------
+[2025-11-06 15:05:52.798]: Info: Monitor 0 is HDMI-A-1: SAM U28E590
+[2025-11-06 15:05:52.798]: Info: --------- End of KMS monitor list ---------
+[2025-11-06 15:05:52.798]: Info: Screencasting with KMS
+[2025-11-06 15:05:52.798]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:05:52.798]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:05:52.798]: Info: Found connector ID [111]
+[2025-11-06 15:05:52.798]: Info: Found cursor plane [79]
+[2025-11-06 15:05:52.830]: Info: Creating encoder [libx264]
+[2025-11-06 15:05:52.830]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:05:52.830]: Info: Color depth: 8-bit
+[2025-11-06 15:05:52.830]: Info: Color range: MPEG
+[2025-11-06 15:05:52.830]: Info: Streaming bitrate is 117964000
+[2025-11-06 15:05:52.832]: Info: [libx264 @ 0x7fbc4c008f00] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:05:52.833]: Info: [libx264 @ 0x7fbc4c008f00] profile Constrained Baseline, level 5.2, 4:2:0, 8-bit
+[2025-11-06 15:05:52.836]: Info: Minimum frame time set to 16.6667ms, based on client-requested target framerate 60.
+[2025-11-06 15:05:53.315]: Info: Setting default sink to: [sink-sunshine-surround51]
+[2025-11-06 15:05:53.316]: Info: Found default monitor by name: sink-sunshine-surround51.monitor
+[2025-11-06 15:05:53.338]: Info: Opus initialized: 48 kHz, 6 channels, 1536 kbps (total), LOWDELAY
+[2025-11-06 15:06:29.239]: Info: CLIENT DISCONNECTED
+[2025-11-06 15:06:29.242]: Info: Setting default sink to: [alsa_output.pci-0000_28_00.4.iec958-stereo]
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] frame I:5     Avg QP:13.96  size:248634
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] frame P:1058  Avg QP: 0.99  size: 53163
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] mb P  I16..4:  0.9%  0.0%  0.0%  P16..4: 18.0%  0.0%  0.0%  0.0%  0.0%    skip:81.0%
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] coded y,uvDC,uvAC intra: 36.0% 30.8% 24.8% inter: 6.9% 2.7% 2.4%
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] i16 v,h,dc,p: 60% 22% 11%  7%
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] i8c dc,h,v,p: 69% 20%  9%  2%
+[2025-11-06 15:06:29.251]: Info: [libx264 @ 0x7fbc4c008f00] kb/s:25959.69
+[2025-11-06 15:06:36.809]: Info: Trying encoder [nvenc]
+[2025-11-06 15:06:36.809]: Info: Screencasting with KMS
+[2025-11-06 15:06:36.809]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:36.809]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:36.809]: Info: Found connector ID [111]
+[2025-11-06 15:06:36.809]: Info: Found cursor plane [79]
+[2025-11-06 15:06:36.809]: Warning: Attempting to use NVENC without CUDA support. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:06:36.809]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:36.809]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:36.810]: Info: Found connector ID [111]
+[2025-11-06 15:06:36.810]: Info: Found cursor plane [79]
+[2025-11-06 15:06:36.816]: Info: Creating encoder [h264_nvenc]
+[2025-11-06 15:06:36.816]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:36.816]: Info: Color depth: 8-bit
+[2025-11-06 15:06:36.816]: Info: Color range: JPEG
+[2025-11-06 15:06:36.897]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:36.897]: Error: [h264_nvenc @ 0x7fbc6c3d2840] Cannot load libnvidia-encode.so.1
+[2025-11-06 15:06:36.897]: Error: [h264_nvenc @ 0x7fbc6c3d2840] The minimum required Nvidia driver for nvenc is 520.56.06 or newer
+[2025-11-06 15:06:36.948]: Error: Could not open codec [h264_nvenc]: Operation not permitted
+[2025-11-06 15:06:36.948]: Info: Encoder [nvenc] failed
+[2025-11-06 15:06:36.948]: Error: Couldn't find any working encoder matching [nvenc]
+[2025-11-06 15:06:36.948]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-11-06 15:06:36.948]: Info: Trying encoder [vaapi]
+[2025-11-06 15:06:36.948]: Info: Screencasting with KMS
+[2025-11-06 15:06:36.948]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:36.949]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:36.949]: Info: Found connector ID [111]
+[2025-11-06 15:06:36.949]: Info: Found cursor plane [79]
+[2025-11-06 15:06:37.076]: Warning: Monitor  doesn't support hardware encoding. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:06:37.076]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:37.076]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:37.076]: Info: Found connector ID [111]
+[2025-11-06 15:06:37.076]: Info: Found cursor plane [79]
+[2025-11-06 15:06:37.078]: Info: Creating encoder [h264_vaapi]
+[2025-11-06 15:06:37.078]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:37.078]: Info: Color depth: 8-bit
+[2025-11-06 15:06:37.078]: Info: Color range: JPEG
+[2025-11-06 15:06:37.152]: Info: vaapi vendor: VA-API NVDEC driver [direct backend]
+[2025-11-06 15:06:37.152]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:37.356]: Error: [h264_vaapi @ 0x7fbc6c3d2840] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2025-11-06 15:06:37.404]: Error: Could not open codec [h264_vaapi]: Function not implemented
+[2025-11-06 15:06:37.404]: Info: Encoder [vaapi] failed
+[2025-11-06 15:06:37.405]: Info: Trying encoder [software]
+[2025-11-06 15:06:37.405]: Info: Screencasting with KMS
+[2025-11-06 15:06:37.405]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:37.405]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:37.405]: Info: Found connector ID [111]
+[2025-11-06 15:06:37.405]: Info: Found cursor plane [79]
+[2025-11-06 15:06:37.407]: Info: Creating encoder [libx264]
+[2025-11-06 15:06:37.407]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:37.407]: Info: Color depth: 8-bit
+[2025-11-06 15:06:37.407]: Info: Color range: JPEG
+[2025-11-06 15:06:37.407]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:37.408]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:06:37.409]: Info: [libx264 @ 0x7fbc6c3d2840] profile Constrained Baseline, level 4.2, 4:2:0, 8-bit
+[2025-11-06 15:06:37.449]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -32932 bits)
+[2025-11-06 15:06:37.449]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  6929
+[2025-11-06 15:06:37.449]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:06:37.449]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:06:37.449]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:06:37.449]: Info: [libx264 @ 0x7fbc6c3d2840] i8c dc,h,v,p: 100%  0%  0%  0%
+[2025-11-06 15:06:37.449]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3325.92
+[2025-11-06 15:06:37.449]: Info: Creating encoder [libx264]
+[2025-11-06 15:06:37.449]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:37.449]: Info: Color depth: 8-bit
+[2025-11-06 15:06:37.449]: Info: Color range: JPEG
+[2025-11-06 15:06:37.449]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:37.451]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:06:37.451]: Info: [libx264 @ 0x7fbc6c3d2840] profile High 4:4:4 Predictive, level 4.2, 4:4:4, 8-bit
+[2025-11-06 15:06:37.494]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -41108 bits)
+[2025-11-06 15:06:37.494]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  7951
+[2025-11-06 15:06:37.494]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:06:37.494]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,u,v intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:06:37.494]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:06:37.494]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3816.48
+[2025-11-06 15:06:37.497]: Info: Screencasting with KMS
+[2025-11-06 15:06:37.498]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:37.498]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:37.498]: Info: Found connector ID [111]
+[2025-11-06 15:06:37.498]: Info: Found cursor plane [79]
+[2025-11-06 15:06:37.500]: Info: 
+[2025-11-06 15:06:37.500]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-11-06 15:06:37.500]: Info: 
+[2025-11-06 15:06:37.500]: Info: Found H.264 encoder: libx264 [software]
+[2025-11-06 15:06:37.511]: Info: New streaming session started [active sessions: 1]
+[2025-11-06 15:06:37.536]: Info: CLIENT CONNECTED
+[2025-11-06 15:06:37.536]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:37.537]: Info: Found display [wayland-0]
+[2025-11-06 15:06:37.537]: Info: Found interface: zxdg_output_manager_v1(31) version 3
+[2025-11-06 15:06:37.537]: Info: Found interface: zwp_linux_dmabuf_v1(52) version 4
+[2025-11-06 15:06:37.537]: Info: Found interface: wl_output(62) version 4
+[2025-11-06 15:06:37.537]: Info: Resolution: 3840x2160
+[2025-11-06 15:06:37.537]: Info: Offset: 0x0
+[2025-11-06 15:06:37.537]: Info: Logical size: 2194x1234
+[2025-11-06 15:06:37.537]: Info: Name: HDMI-A-1
+[2025-11-06 15:06:37.537]: Info: Found monitor: SAM U28E590
+[2025-11-06 15:06:37.537]: Info: -------- Start of KMS monitor list --------
+[2025-11-06 15:06:37.537]: Info: Monitor 0 is HDMI-A-1: SAM U28E590
+[2025-11-06 15:06:37.537]: Info: --------- End of KMS monitor list ---------
+[2025-11-06 15:06:37.537]: Info: Screencasting with KMS
+[2025-11-06 15:06:37.537]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:37.537]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:37.537]: Info: Found connector ID [111]
+[2025-11-06 15:06:37.537]: Info: Found cursor plane [79]
+[2025-11-06 15:06:37.568]: Info: Creating encoder [libx264]
+[2025-11-06 15:06:37.568]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:37.568]: Info: Color depth: 8-bit
+[2025-11-06 15:06:37.568]: Info: Color range: MPEG
+[2025-11-06 15:06:37.568]: Info: Streaming bitrate is 117964000
+[2025-11-06 15:06:37.569]: Info: [libx264 @ 0x7fbc54003180] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:06:37.576]: Info: [libx264 @ 0x7fbc54003180] profile Constrained Baseline, level 6.0, 4:2:0, 8-bit
+[2025-11-06 15:06:37.595]: Info: Minimum frame time set to 16.6667ms, based on client-requested target framerate 60.
+[2025-11-06 15:06:38.042]: Info: Setting default sink to: [sink-sunshine-surround51]
+[2025-11-06 15:06:38.042]: Info: Found default monitor by name: sink-sunshine-surround51.monitor
+[2025-11-06 15:06:38.066]: Info: Opus initialized: 48 kHz, 6 channels, 1536 kbps (total), LOWDELAY
+[2025-11-06 15:06:40.907]: Info: CLIENT DISCONNECTED
+[2025-11-06 15:06:40.910]: Info: Setting default sink to: [alsa_output.pci-0000_28_00.4.iec958-stereo]
+[2025-11-06 15:06:40.950]: Info: [libx264 @ 0x7fbc54003180] frame I:22    Avg QP:20.78  size:285794
+[2025-11-06 15:06:40.950]: Info: [libx264 @ 0x7fbc54003180] frame P:48    Avg QP:13.71  size:123094
+[2025-11-06 15:06:40.950]: Info: [libx264 @ 0x7fbc54003180] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:06:40.950]: Info: [libx264 @ 0x7fbc54003180] mb P  I16..4:  8.1%  0.0%  0.0%  P16..4: 23.7%  0.0%  0.0%  0.0%  0.0%    skip:68.1%
+[2025-11-06 15:06:40.951]: Info: [libx264 @ 0x7fbc54003180] coded y,uvDC,uvAC intra: 12.0% 16.4% 5.9% inter: 9.5% 9.0% 3.1%
+[2025-11-06 15:06:40.951]: Info: [libx264 @ 0x7fbc54003180] i16 v,h,dc,p: 65% 26%  4%  5%
+[2025-11-06 15:06:40.951]: Info: [libx264 @ 0x7fbc54003180] i8c dc,h,v,p: 74% 16%  9%  1%
+[2025-11-06 15:06:40.951]: Info: [libx264 @ 0x7fbc54003180] kb/s:83629.69
+[2025-11-06 15:06:47.505]: Info: Trying encoder [nvenc]
+[2025-11-06 15:06:47.505]: Info: Screencasting with KMS
+[2025-11-06 15:06:47.505]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:47.505]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:47.505]: Info: Found connector ID [111]
+[2025-11-06 15:06:47.506]: Info: Found cursor plane [79]
+[2025-11-06 15:06:47.506]: Warning: Attempting to use NVENC without CUDA support. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:06:47.506]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:47.506]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:47.506]: Info: Found connector ID [111]
+[2025-11-06 15:06:47.506]: Info: Found cursor plane [79]
+[2025-11-06 15:06:47.511]: Info: Creating encoder [h264_nvenc]
+[2025-11-06 15:06:47.511]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:47.511]: Info: Color depth: 8-bit
+[2025-11-06 15:06:47.511]: Info: Color range: JPEG
+[2025-11-06 15:06:47.594]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:47.595]: Error: [h264_nvenc @ 0x7fbc6c3d2840] Cannot load libnvidia-encode.so.1
+[2025-11-06 15:06:47.595]: Error: [h264_nvenc @ 0x7fbc6c3d2840] The minimum required Nvidia driver for nvenc is 520.56.06 or newer
+[2025-11-06 15:06:47.645]: Error: Could not open codec [h264_nvenc]: Operation not permitted
+[2025-11-06 15:06:47.645]: Info: Encoder [nvenc] failed
+[2025-11-06 15:06:47.645]: Error: Couldn't find any working encoder matching [nvenc]
+[2025-11-06 15:06:47.645]: Info: // Testing for available encoders, this may generate errors. You can safely ignore those errors. //
+[2025-11-06 15:06:47.645]: Info: Trying encoder [vaapi]
+[2025-11-06 15:06:47.646]: Info: Screencasting with KMS
+[2025-11-06 15:06:47.646]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:47.646]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:47.646]: Info: Found connector ID [111]
+[2025-11-06 15:06:47.646]: Info: Found cursor plane [79]
+[2025-11-06 15:06:47.771]: Warning: Monitor  doesn't support hardware encoding. Reverting back to GPU -> RAM -> GPU
+[2025-11-06 15:06:47.771]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:47.771]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:47.771]: Info: Found connector ID [111]
+[2025-11-06 15:06:47.772]: Info: Found cursor plane [79]
+[2025-11-06 15:06:47.774]: Info: Creating encoder [h264_vaapi]
+[2025-11-06 15:06:47.774]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:47.774]: Info: Color depth: 8-bit
+[2025-11-06 15:06:47.774]: Info: Color range: JPEG
+[2025-11-06 15:06:47.847]: Info: vaapi vendor: VA-API NVDEC driver [direct backend]
+[2025-11-06 15:06:47.847]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:48.053]: Error: [h264_vaapi @ 0x7fbc6c3d2840] No usable encoding entrypoint found for profile VAProfileH264High (7).
+[2025-11-06 15:06:48.101]: Error: Could not open codec [h264_vaapi]: Function not implemented
+[2025-11-06 15:06:48.102]: Info: Encoder [vaapi] failed
+[2025-11-06 15:06:48.102]: Info: Trying encoder [software]
+[2025-11-06 15:06:48.102]: Info: Screencasting with KMS
+[2025-11-06 15:06:48.102]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:48.102]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:48.103]: Info: Found connector ID [111]
+[2025-11-06 15:06:48.103]: Info: Found cursor plane [79]
+[2025-11-06 15:06:48.105]: Info: Creating encoder [libx264]
+[2025-11-06 15:06:48.105]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:48.105]: Info: Color depth: 8-bit
+[2025-11-06 15:06:48.105]: Info: Color range: JPEG
+[2025-11-06 15:06:48.105]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:48.106]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:06:48.107]: Info: [libx264 @ 0x7fbc6c3d2840] profile Constrained Baseline, level 4.2, 4:2:0, 8-bit
+[2025-11-06 15:06:48.146]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -32932 bits)
+[2025-11-06 15:06:48.146]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  6929
+[2025-11-06 15:06:48.146]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:06:48.146]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,uvDC,uvAC intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:06:48.146]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:06:48.146]: Info: [libx264 @ 0x7fbc6c3d2840] i8c dc,h,v,p: 100%  0%  0%  0%
+[2025-11-06 15:06:48.146]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3325.92
+[2025-11-06 15:06:48.146]: Info: Creating encoder [libx264]
+[2025-11-06 15:06:48.146]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:48.146]: Info: Color depth: 8-bit
+[2025-11-06 15:06:48.146]: Info: Color range: JPEG
+[2025-11-06 15:06:48.146]: Info: Streaming bitrate is 1000000
+[2025-11-06 15:06:48.148]: Info: [libx264 @ 0x7fbc6c3d2840] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:06:48.148]: Info: [libx264 @ 0x7fbc6c3d2840] profile High 4:4:4 Predictive, level 4.2, 4:4:4, 8-bit
+[2025-11-06 15:06:48.191]: Warning: [libx264 @ 0x7fbc6c3d2840] VBV underflow (frame 0, -41108 bits)
+[2025-11-06 15:06:48.191]: Info: [libx264 @ 0x7fbc6c3d2840] frame I:1     Avg QP:40.00  size:  7951
+[2025-11-06 15:06:48.191]: Info: [libx264 @ 0x7fbc6c3d2840] mb I  I16..4: 100.0%  0.0%  0.0%
+[2025-11-06 15:06:48.191]: Info: [libx264 @ 0x7fbc6c3d2840] coded y,u,v intra: 0.0% 0.0% 0.0%
+[2025-11-06 15:06:48.191]: Info: [libx264 @ 0x7fbc6c3d2840] i16 v,h,dc,p: 97%  0%  3%  0%
+[2025-11-06 15:06:48.191]: Info: [libx264 @ 0x7fbc6c3d2840] kb/s:3816.48
+[2025-11-06 15:06:48.195]: Info: Screencasting with KMS
+[2025-11-06 15:06:48.195]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:48.195]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:48.195]: Info: Found connector ID [111]
+[2025-11-06 15:06:48.195]: Info: Found cursor plane [79]
+[2025-11-06 15:06:48.197]: Info: 
+[2025-11-06 15:06:48.197]: Info: // Ignore any errors mentioned above, they are not relevant. //
+[2025-11-06 15:06:48.197]: Info: 
+[2025-11-06 15:06:48.197]: Info: Found H.264 encoder: libx264 [software]
+[2025-11-06 15:06:48.210]: Info: New streaming session started [active sessions: 1]
+[2025-11-06 15:06:48.230]: Info: CLIENT CONNECTED
+[2025-11-06 15:06:48.232]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:48.232]: Info: Found display [wayland-0]
+[2025-11-06 15:06:48.232]: Info: Found interface: zxdg_output_manager_v1(31) version 3
+[2025-11-06 15:06:48.232]: Info: Found interface: zwp_linux_dmabuf_v1(52) version 4
+[2025-11-06 15:06:48.232]: Info: Found interface: wl_output(62) version 4
+[2025-11-06 15:06:48.232]: Info: Resolution: 3840x2160
+[2025-11-06 15:06:48.232]: Info: Offset: 0x0
+[2025-11-06 15:06:48.232]: Info: Logical size: 2194x1234
+[2025-11-06 15:06:48.232]: Info: Name: HDMI-A-1
+[2025-11-06 15:06:48.232]: Info: Found monitor: SAM U28E590
+[2025-11-06 15:06:48.232]: Info: -------- Start of KMS monitor list --------
+[2025-11-06 15:06:48.232]: Info: Monitor 0 is HDMI-A-1: SAM U28E590
+[2025-11-06 15:06:48.232]: Info: --------- End of KMS monitor list ---------
+[2025-11-06 15:06:48.232]: Info: Screencasting with KMS
+[2025-11-06 15:06:48.232]: Info: /dev/dri/card1 -> nvidia-drm
+[2025-11-06 15:06:48.232]: Info: Found monitor for DRM screencasting
+[2025-11-06 15:06:48.232]: Info: Found connector ID [111]
+[2025-11-06 15:06:48.233]: Info: Found cursor plane [79]
+[2025-11-06 15:06:48.265]: Info: Creating encoder [libx264]
+[2025-11-06 15:06:48.265]: Info: Color coding: SDR (Rec. 601)
+[2025-11-06 15:06:48.266]: Info: Color depth: 8-bit
+[2025-11-06 15:06:48.266]: Info: Color range: MPEG
+[2025-11-06 15:06:48.266]: Info: Streaming bitrate is 117964000
+[2025-11-06 15:06:48.267]: Info: [libx264 @ 0x7fbc4af16300] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[2025-11-06 15:06:48.268]: Info: [libx264 @ 0x7fbc4af16300] profile Constrained Baseline, level 5.2, 4:2:0, 8-bit
+[2025-11-06 15:06:48.270]: Info: Minimum frame time set to 16.6667ms, based on client-requested target framerate 60.
+[2025-11-06 15:06:48.758]: Info: Setting default sink to: [sink-sunshine-surround51]
+[2025-11-06 15:06:48.759]: Info: Found default monitor by name: sink-sunshine-surround51.monitor
+[2025-11-06 15:06:48.782]: Info: Opus initialized: 48 kHz, 6 channels, 1536 kbps (total), LOWDELAY
+[2025-11-06 15:07:42.670]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:09:50.678]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:11:58.686]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:14:06.694]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:16:14.702]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:18:22.710]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:20:30.718]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:22:38.726]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:24:46.734]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:26:54.742]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:29:02.750]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:31:10.757]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:33:18.765]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:35:26.773]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:37:34.781]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:39:42.789]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:41:50.797]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:43:58.805]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:46:06.813]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:48:14.822]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:50:22.829]: Warning: Couldn't discover any IPv4 UPNP devices
+[2025-11-06 15:52:30.837]: Warning: Couldn't discover any IPv4 UPNP devices
