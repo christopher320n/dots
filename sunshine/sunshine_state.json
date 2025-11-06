@@ -1,0 +1,15 @@
+{
+    "username": "nixos-sunshine",
+    "salt": "v)Wex3ULPuPGvUQ0",
+    "password": "B786231E8E87DCAAE0B638DC78D73449F7A599BA08C9E12EE142E9A1979E65D3",
+    "root": {
+        "uniqueid": "75062A93-C4B7-7A07-C71A-EEAFC3DCF46C",
+        "named_devices": [
+            {
+                "name": "Mac",
+                "cert": "-----BEGIN CERTIFICATE-----\nMIICvzCCAaegAwIBAgIBADANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDDBhOVklE\nSUEgR2FtZVN0cmVhbSBDbGllbnQwHhcNMjMwMzAyMTA0OTQ0WhcNNDMwMjI1MTA0\nOTQ0WjAjMSEwHwYDVQQDDBhOVklESUEgR2FtZVN0cmVhbSBDbGllbnQwggEiMA0G\nCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDOtals5YWB8ma2A07Wq1lo6yHhZ\/rP\nAbVc\/\/mx9ziOkGJtPD54JeFAsDHOLXDfI\/5kNzg9EOBXLP\/IciYPLJPP2WSSma3Z\nqDl+hjACyhEWLEMhBOejdbnk2TJ2ehNOyC\/h91ZD5ZAOcTAtwUcnjbtvJUs6pyG0\nFi5pbWfyoIyT03enKvUSXZ9r+bCsLh0hJBKfD6gSN3GG6\/c7HbVC3tFAe0Z\/IGsR\n+DXGJuqPu+o6L\/Iib0KnXP0JFA2SOqTctevvSitvLhKmgNJMuq3GZJuOfVONPOIt\nsnlUml8iGECpe4eCF5ao5eDqtCN9u+WYswqEmgM\/e7QTdlMfERzQfFd9AgMBAAEw\nDQYJKoZIhvcNAQELBQADggEBAG2QGpGSmKnGH9fNPDh\/p5z2wnXIveUXEPcmiu98\niw1is9klTtUrw+xyVBQHAZwSHGaj\/1lJLvp4pXpaKhkO2feZ\/sAYeYH0jAvHnhaA\ngvBX9zGNQDINT36L3fVW7dhFldOJMkAVjySp0jLRTAgukHFPLaWAck6vfgsfjAUa\njJgsT+k4dUkKCx+S21j3drjSCjV0HfH89X4GoRR8OelehMcznnrTdwesgxL7iDp+\nLoV1s6Vi7T8ys4i1mFcjrxxQ6u97WLnAPafeiH+NCJV\/Bev9RY54CYAuFCT9fVVz\ndh1VotVMieWrfadTY04A3rDr5+gIsxKrPecRGRDpzWMRuhQ=\n-----END CERTIFICATE-----\n",
+                "uuid": "39EB05FD-BA1D-D025-7A92-540628B290F2"
+            }
+        ]
+    }
+}
