@@ -44,20 +44,26 @@ export PATH="/opt/homebrew/bin:/bin:/usr/bin"
 
 # Alias
 alias "reload"="source ~/.zshrc; clear"
-alias "tmuxks"="tmux kill-server"
-alias "edit"="nvim"
-alias "editzsh"="nvim ~/.zshrc"
-alias "git pfush"="git push --force-with-lease"
-alias "editcfg"="nvim ~/.config/"
-alias "edittiles"="nvim ~/.aerospace.toml"
+alias "esh"="nvim ~/.zshrc"
+alias "forcepush"="git push --force-with-lease"
+alias "econf"="nvim ~/.config/"
 alias "main"="cd ~/Desktop/Main/"
 alias "ic"="cd '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud'"
 alias "scratch"="nvim '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud/misc/scratchpad.md'"
-alias "atlas"="cd '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud/misc/Atlas/'"
+alias "gdev"="cd ~/Desktop/Main/UnityProjects/Pinetown\ Trail/ && nvim"
 alias "dt"="cd ~/Desktop/"
 alias "cc"="clear"
 alias "esc"="tmux kill-server"
+alias "vim"="nvim"
+alias "videos"="cd '/Users/christopher/Library/Mobile Documents/com~apple~CloudDocs/Main - iCloud/misc/YouTube'"
 
-export PATH="$HOME/.config/scripts:$PATH"
+export DOTNET_ROOT=/usr/local/share/dotnet
+export PATH=$DOTNET_ROOT:$PATH
 export PATH=$PATH:/Users/christopher/.spicetify
+export PATH="$HOME/.config/scripts:$PATH"
 export PATH="${HOME}/.local/bin":${PATH}
+
+
+
+GITSTATUS_LOG_LEVEL=DEBUG
+export PATH="$PATH:/sbin"
