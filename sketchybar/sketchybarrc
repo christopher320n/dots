@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+source "${CONFIG_DIR}/themes/e-ink.sh"
+PLUGIN_DIR="$CONFIG_DIR/plugins"
+
+sketchybar --bar position=top \
+                 height=30 \
+                 color="0x00FFFFFF" \
+
+default=(
+  padding_left=0
+  padding_right=0
+  icon.font="MesloLGL Nerd Font:Bold:17.0"
+  label.font="Ubuntu Nerd Font:Bold:15.0"
+  icon.color="${COLOUR_TEXT}"
+  label.color="${COLOUR_TEXT}"
+  icon.padding_left=4
+  icon.padding_right=4
+  label.padding_left=0
+  label.padding_right=14
+)
+sketchybar --default "${default[@]}"
+
+# -- Left --
+source "${CONFIG_DIR}/items/aerospace.sh"
+
+# -- Right --
+source "${CONFIG_DIR}/items/time.sh"
+source "${CONFIG_DIR}/items/date.sh"
+
+sketchybar --update
