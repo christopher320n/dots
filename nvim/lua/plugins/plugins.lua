@@ -1,23 +1,19 @@
 return {
   {
-    "neanias/everforest-nvim",
-    version = false,
-    lazy = false,
+    "e-ink-colorscheme/e-ink.nvim",
     priority = 1000,
     config = function()
-      require("everforest").setup({
-        background = "medium"
-      })
-      vim.cmd([[colorscheme everforest]])
-    end,
+      require("e-ink").setup()
+      vim.cmd.colorscheme "e-ink"
+    end
   },
   {
     'eliseshaffer/darklight.nvim',
     config = function()
       require('darklight').setup({
-        mode = 'colorscheme',                -- Sets darklight to colorscheme mode
-        light_mode_colorscheme = 'everforest', -- Sets the colorscheme to use for light mode
-        dark_mode_colorscheme = 'everforest', -- Sets the colorscheme to use for dark mode
+        mode = 'colorscheme',                  -- Sets darklight to colorscheme mode
+        light_mode_colorscheme = 'e-ink', -- Sets the colorscheme to use for light mode
+        dark_mode_colorscheme = 'e-ink',  -- Sets the colorscheme to use for dark mode
       })
     end,
   },
