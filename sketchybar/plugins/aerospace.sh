@@ -12,5 +12,14 @@ sketchybar --add event aerospace_monitor_change
 
 
 for sid in $(aerospace list-workspaces --focused); do
-  sketchybar --set $NAME icon="$sid" icon.color=${COLOUR_TEXT}
+  sketchybar --set $NAME \
+             icon="$sid" \
+             icon.color=${COLOUR_TEXT} \
+             background.color=${COLOUR_TEXT} \
+             background.height=3 \
+             background.y_offset=-10 \
+             background.corner_radius=10 \
+             icon.padding_left=0 \
+             icon.padding_right=0 \
+             background.x_offset=-6
 done
