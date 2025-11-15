@@ -16,10 +16,10 @@ for sid in $(aerospace list-workspaces --focused); do
              icon="$sid" \
              icon.color=${COLOUR_TEXT} \
              background.color=${COLOUR_TEXT} \
-             background.height=3 \
+             background.height=2 \
              background.y_offset=-10 \
              background.corner_radius=10 \
-             icon.padding_left=0 \
-             icon.padding_right=0 \
-             background.x_offset=-6
+             icon.padding_left=-5 \
+             icon.padding_right=-5 \
+             background.x_offset=-7
 done
