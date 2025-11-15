@@ -10,7 +10,6 @@ source "${CONFIG_DIR}/themes/e-ink.sh"
 sketchybar --add event aerospace_workspace_change
 sketchybar --add event aerospace_monitor_change
 
-
 for sid in $(aerospace list-workspaces --focused); do
   sketchybar --set $NAME \
              icon="$sid" \

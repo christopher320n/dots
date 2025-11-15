@@ -9,6 +9,5 @@ for sid in $(aerospace list-workspaces --focused); do
     --set space.$sid \
     icon="$sid" \
     label.font="sketchybar-app-font:Regular:16.0" \
-    click_script="aerospace workspace $sid" \
     script="$CONFIG_DIR/plugins/aerospace.sh $sid"
 done
