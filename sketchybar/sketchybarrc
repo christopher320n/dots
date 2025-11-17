@@ -14,9 +14,6 @@ default=(
   label.font="Ubuntu Nerd Font:Bold:15.0"
   icon.color="${COLOUR_TEXT}"
   label.color="${COLOUR_TEXT}"
-  icon.padding_left=4
-  icon.padding_right=4
-  label.padding_left=0
   label.padding_right=14
 )
 sketchybar --default "${default[@]}"
