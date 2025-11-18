@@ -7,12 +7,14 @@ source "${CONFIG_DIR}/themes/e-ink.sh"
 # make sure it's executable with:
 # chmod +x ~/.config/sketchybar/plugins/aerospace.sh
 
+workspaceLetters=(Q A W S E D)
+
 sketchybar --add event aerospace_workspace_change
 sketchybar --add event aerospace_monitor_change
 
 for sid in $(aerospace list-workspaces --focused); do
   sketchybar --set $NAME \
-             icon="$sid" \
+             icon="${workspaceLetters[$sid-1]}-$sid" \
              icon.color=${COLOUR_TEXT} \
              #background.color=${COLOUR_TEXT} \
              background.height=2 \
