@@ -12,7 +12,7 @@ sketchybar --add event aerospace_monitor_change
 
 for sid in $(aerospace list-workspaces --focused); do
   sketchybar --set $NAME \
-             icon="A-$sid" \
+             icon="$sid" \
              icon.color=${COLOUR_TEXT} \
              #background.color=${COLOUR_TEXT} \
              background.height=2 \
