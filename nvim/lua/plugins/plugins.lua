@@ -1,10 +1,10 @@
 return {
   {
-    "e-ink-colorscheme/e-ink.nvim",
+    "Mofiqul/dracula.nvim",
     priority = 1000,
     config = function()
-      require("e-ink").setup()
-      vim.cmd.colorscheme "e-ink"
+      require("dracula").setup()
+      vim.cmd.colorscheme "dracula"
     end
   },
   {
@@ -12,8 +12,8 @@ return {
     config = function()
       require('darklight').setup({
         mode = 'colorscheme',                  -- Sets darklight to colorscheme mode
-        light_mode_colorscheme = 'e-ink', -- Sets the colorscheme to use for light mode
-        dark_mode_colorscheme = 'e-ink',  -- Sets the colorscheme to use for dark mode
+        light_mode_colorscheme = 'dracula', -- Sets the colorscheme to use for light mode
+        dark_mode_colorscheme = 'dracula',  -- Sets the colorscheme to use for dark mode
       })
     end,
   },

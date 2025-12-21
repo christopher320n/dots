@@ -10,7 +10,7 @@ after-login-command = []
 # 'after-startup-command' is run after 'after-login-command'
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
-  'exec-and-forget borders', 'exec-and-forget sketchybar'
+  'exec-and-forget borders'
 ]
 
 exec-on-workspace-change = ['/bin/bash', '-c',
@@ -60,12 +60,12 @@ automatically-unhide-macos-hidden-apps = true
 #                 https://nikitabobko.github.io/AeroSpace/guide#assign-workspaces-to-monitors
 
 [gaps]
-    inner.horizontal = 17
-    inner.vertical =   17
-    outer.left =       17
-    outer.bottom =     17
-    outer.top =        [{monitor."Built-in Retina Display" = 17}, 35]
-    outer.right =      17
+    inner.horizontal = 10
+    inner.vertical =   10
+    outer.left =       10
+    outer.bottom =     10
+    outer.top =        [{monitor."Built-in Retina Display" = 10}, 3]
+    outer.right =      10
 
 # 'main' binding mode declaration
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -104,20 +104,20 @@ automatically-unhide-macos-hidden-apps = true
     alt-equal = 'resize smart +50'
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-    alt-q = 'workspace 1'
-    alt-a = 'workspace 2'
-    alt-w = 'workspace 3'
-    alt-s = 'workspace 4'
-    alt-e = 'workspace 5'
-    alt-d = 'workspace 6'
+    alt-1 = 'workspace 1'
+    alt-2 = 'workspace 2'
+    alt-3 = 'workspace 3'
+    alt-4 = 'workspace 4'
+    alt-5 = 'workspace 5'
+    alt-6 = 'workspace 6'
 
         # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
-    alt-shift-q = 'move-node-to-workspace 1'
-    alt-shift-a = 'move-node-to-workspace 2'
-    alt-shift-w = 'move-node-to-workspace 3'
-    alt-shift-s = 'move-node-to-workspace 4'
-    alt-shift-e = 'move-node-to-workspace 5'
-    alt-shift-d = 'move-node-to-workspace 6'
+    alt-shift-1 = 'move-node-to-workspace 1'
+    alt-shift-2 = 'move-node-to-workspace 2'
+    alt-shift-3 = 'move-node-to-workspace 3'
+    alt-shift-4 = 'move-node-to-workspace 4'
+    alt-shift-5 = 'move-node-to-workspace 5'
+    alt-shift-6 = 'move-node-to-workspace 6'
 
     [workspace-to-monitor-force-assignment]
     1 = 'main'
